@@ -76,12 +76,12 @@ export function SiagresBody() {
                 <span style={{ width: "9px", height: "9px", borderRadius: "50%", background: "#28c840", display: "block" }}></span>
               </div>
               {" "}
-              <Image src="/assets/siag-detalhe.webp" fetchPriority="high" alt="Detalhamento de um MTR no web: resíduos, ações, participantes e histórico" style={{ display: "block", width: "100%", height: "auto" }} width={1440} height={1352} />
+              <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/siag-detalhe.webp" fetchPriority="high" alt="Detalhamento de um MTR no web: resíduos, ações, participantes e histórico" style={{ display: "block", width: "100%", height: "auto" }} width={1440} height={1352} />
             </div>
             {" "}
-            <Image src="/assets/siag-m-lista-transp.webp" fetchPriority="high" alt="App mobile com a lista de MTRs do transportador" style={{ position: "absolute", right: "25%", top: "30%", width: "18%", height: "auto", borderRadius: "clamp(12px,1.7vw,24px)", boxShadow: "0 30px 60px rgba(4,30,14,.4)", display: "block" }} width={780} height={1946} />
+            <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/siag-m-lista-transp.webp" fetchPriority="high" alt="App mobile com a lista de MTRs do transportador" style={{ position: "absolute", right: "25%", top: "30%", width: "18%", height: "auto", borderRadius: "clamp(12px,1.7vw,24px)", boxShadow: "0 30px 60px rgba(4,30,14,.4)", display: "block" }} width={780} height={1946} />
             {" "}
-            <Image src="/assets/siag-m-lotes-coleta.webp" alt="App mobile com os lotes de resíduo para coletar" style={{ position: "absolute", right: "6%", top: "16%", width: "21%", height: "auto", borderRadius: "clamp(14px,2vw,28px)", boxShadow: "0 30px 60px rgba(4,30,14,.4)", display: "block" }} width={780} height={1962} />
+            <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/siag-m-lotes-coleta.webp" alt="App mobile com os lotes de resíduo para coletar" style={{ position: "absolute", right: "6%", top: "16%", width: "21%", height: "auto", borderRadius: "clamp(14px,2vw,28px)", boxShadow: "0 30px 60px rgba(4,30,14,.4)", display: "block" }} width={780} height={1962} />
           </div>
         </div>
       </section>
@@ -311,7 +311,7 @@ export function SiagresBody() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(100%,420px),1fr))", gap: "12px", alignItems: "stretch" }}>
             <figure style={{ gridColumn: "span 2", margin: "0", display: "flex", flexDirection: "column", gap: "12px", padding: "clamp(16px,2vw,24px)", borderRadius: "24px", background: "#e3f2e7", minWidth: "0" }}>
               <div style={{ borderRadius: "14px", overflow: "hidden", border: "1px solid rgba(11,94,42,.18)", background: "#fff", aspectRatio: "1000/180" }}>
-                <Image src="/assets/siag-cad-03.webp" loading="lazy" alt="Resíduo adicionado ao MTR com código, peso, acondicionamento, classe, estado físico e tratamento" style={{ display: "block", width: "144%", maxWidth: "none", height: "auto", margin: "-61.2% 0 0 -36.2%" }} width={1440} height={1002} />
+                <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/siag-cad-03.webp" loading="lazy" alt="Resíduo adicionado ao MTR com código, peso, acondicionamento, classe, estado físico e tratamento" style={{ display: "block", width: "144%", maxWidth: "none", height: "auto", margin: "-61.2% 0 0 -36.2%" }} width={1440} height={1002} />
               </div>
               <figcaption style={{ display: "flex", flexWrap: "wrap", gap: "6px", alignItems: "center", fontSize: "14px", lineHeight: "1.45", color: "#0a3d1f" }}>
                 <span style={{ fontWeight: "600", marginRight: "6px" }}>
@@ -379,7 +379,7 @@ export function SiagresBody() {
           <div data-m="row" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(100%,280px),1fr))", gap: "16px" }}>
             <div style={{ position: "relative", display: "flex", flexDirection: "column", borderRadius: "24px", background: "#fff", border: "1px solid #e6e6eb", overflow: "hidden", minWidth: "0" }}>
               <div style={{ height: "200px", background: "#e3f2e7", overflow: "hidden", padding: "20px 20px 0" }}>
-                <Image src="/assets/siag-cad-01.webp" loading="lazy" alt="Cadastro do MTR no web" style={{ display: "block", width: "100%", height: "100%", objectFit: "cover", objectPosition: "left top", borderRadius: "12px 12px 0 0", boxShadow: "0 10px 24px rgba(11,94,42,.18)" }} width={1440} height={978} />
+                <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/siag-cad-01.webp" loading="lazy" alt="Cadastro do MTR no web" style={{ display: "block", width: "100%", height: "100%", objectFit: "cover", objectPosition: "left top", borderRadius: "12px 12px 0 0", boxShadow: "0 10px 24px rgba(11,94,42,.18)" }} width={1440} height={978} />
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "10px", padding: "20px 22px 22px" }}>
                 <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "12px" }}>
@@ -408,7 +408,7 @@ export function SiagresBody() {
             </div>
             <div style={{ position: "relative", display: "flex", flexDirection: "column", borderRadius: "24px", background: "#fff", border: "1px solid #e6e6eb", overflow: "hidden", minWidth: "0" }}>
               <div style={{ height: "200px", background: "#e3f2e7", overflow: "hidden", padding: "20px 20px 0" }}>
-                <Image src="/assets/siag-m-lotes-coleta.webp" loading="lazy" alt="Lotes para coletar no app" style={{ display: "block", width: "62%", maxWidth: "240px", height: "auto", margin: "0 auto", borderRadius: "18px 18px 0 0", boxShadow: "0 10px 24px rgba(11,94,42,.18)" }} width={780} height={1962} />
+                <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/siag-m-lotes-coleta.webp" loading="lazy" alt="Lotes para coletar no app" style={{ display: "block", width: "62%", maxWidth: "240px", height: "auto", margin: "0 auto", borderRadius: "18px 18px 0 0", boxShadow: "0 10px 24px rgba(11,94,42,.18)" }} width={780} height={1962} />
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "10px", padding: "20px 22px 22px" }}>
                 <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "12px" }}>
@@ -440,7 +440,7 @@ export function SiagresBody() {
             </div>
             <div style={{ position: "relative", display: "flex", flexDirection: "column", borderRadius: "24px", background: "#fff", border: "1px solid #e6e6eb", overflow: "hidden", minWidth: "0" }}>
               <div style={{ height: "200px", background: "#e3f2e7", overflow: "hidden", padding: "20px 20px 0" }}>
-                <Image src="/assets/siag-m-lotes-receb.webp" loading="lazy" alt="Lotes para recebimento no app" style={{ display: "block", width: "62%", maxWidth: "240px", height: "auto", margin: "0 auto", borderRadius: "18px 18px 0 0", boxShadow: "0 10px 24px rgba(11,94,42,.18)" }} width={780} height={1908} />
+                <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/siag-m-lotes-receb.webp" loading="lazy" alt="Lotes para recebimento no app" style={{ display: "block", width: "62%", maxWidth: "240px", height: "auto", margin: "0 auto", borderRadius: "18px 18px 0 0", boxShadow: "0 10px 24px rgba(11,94,42,.18)" }} width={780} height={1908} />
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "10px", padding: "20px 22px 22px" }}>
                 <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "12px" }}>
@@ -601,9 +601,9 @@ export function SiagresBody() {
               </div>
               {" "}
               <div style={{ position: "relative", aspectRatio: "1440/1002", background: "#f4f4f4" }}>
-                <Image src="/assets/siag-cad-01.webp" alt="Etapa 1: escolha da categoria do resíduo e do armazenamento temporário" style={{ position: "absolute", inset: "0", width: "100%", height: "auto", display: "block", opacity: op_c1, transition: "opacity .35s ease" }} width={1440} height={978} />
-                <Image src="/assets/siag-cad-02.webp" loading="lazy" alt="Etapa 2 com aviso de no máximo um tipo de resíduo no armazenamento temporário" style={{ position: "absolute", inset: "0", width: "100%", height: "auto", display: "block", opacity: op_c2, transition: "opacity .35s ease" }} width={1440} height={806} />
-                <Image src="/assets/siag-cad-03.webp" loading="lazy" alt="Etapa 2 com um resíduo adicionado e o peso total em relação à capacidade" style={{ position: "absolute", inset: "0", width: "100%", height: "auto", display: "block", opacity: op_c3, transition: "opacity .35s ease" }} width={1440} height={1002} />
+                <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/siag-cad-01.webp" alt="Etapa 1: escolha da categoria do resíduo e do armazenamento temporário" style={{ position: "absolute", inset: "0", width: "100%", height: "auto", display: "block", opacity: op_c1, transition: "opacity .35s ease" }} width={1440} height={978} />
+                <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/siag-cad-02.webp" loading="lazy" alt="Etapa 2 com aviso de no máximo um tipo de resíduo no armazenamento temporário" style={{ position: "absolute", inset: "0", width: "100%", height: "auto", display: "block", opacity: op_c2, transition: "opacity .35s ease" }} width={1440} height={806} />
+                <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/siag-cad-03.webp" loading="lazy" alt="Etapa 2 com um resíduo adicionado e o peso total em relação à capacidade" style={{ position: "absolute", inset: "0", width: "100%", height: "auto", display: "block", opacity: op_c3, transition: "opacity .35s ease" }} width={1440} height={1002} />
               </div>
             </div>
             <p style={{ margin: "0", fontSize: "15px", lineHeight: "1.55", color: "#0a3d1f", textWrap: "pretty" }}>
@@ -688,7 +688,7 @@ export function SiagresBody() {
               </div>
               {" "}
               <div style={{ position: "relative", overflow: "hidden" }}>
-                <Image src="/assets/siag-detalhe.webp" loading="lazy" alt="Detalhamento do MTR com resíduos, ações, gerador, transportador, destinador e histórico" style={{ display: "block", width: "100%", height: "auto" }} width={1440} height={1352} />
+                <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/siag-detalhe.webp" loading="lazy" alt="Detalhamento do MTR com resíduos, ações, gerador, transportador, destinador e histórico" style={{ display: "block", width: "100%", height: "auto" }} width={1440} height={1352} />
                 {" "}
                 <span style={{ position: "absolute", left: hl.l, top: hl.t, width: hl.w, height: hl.h, border: "2px solid #4030ff", borderRadius: "10px", boxShadow: "0 0 0 2000px rgba(16,16,20,.38)", transition: "left .55s cubic-bezier(.2,.7,.2,1),top .55s cubic-bezier(.2,.7,.2,1),width .55s cubic-bezier(.2,.7,.2,1),height .55s cubic-bezier(.2,.7,.2,1)", pointerEvents: "none", display: "block" }}>
                   <span style={{ position: "absolute", left: "-2px", top: "-30px", padding: "4px 10px", borderRadius: "8px 8px 8px 0", background: "#4030ff", color: "#fff", fontSize: "12px", fontWeight: "600", whiteSpace: "nowrap" }}>
@@ -752,25 +752,25 @@ export function SiagresBody() {
               </span>
               <div data-m="row" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(100%,190px),1fr))", gap: "clamp(12px,1.6vw,24px)" }}>
                 <figure style={{ margin: "0", display: "flex", flexDirection: "column", gap: "10px", minWidth: "0" }}>
-                  <Image src="/assets/siag-m-lista-transp.webp" loading="lazy" alt="Meus MTRs na visão do transportador" style={{ display: "block", width: "100%", height: "auto", borderRadius: "22px", background: "#fff" }} width={780} height={1946} />
+                  <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/siag-m-lista-transp.webp" loading="lazy" alt="Meus MTRs na visão do transportador" style={{ display: "block", width: "100%", height: "auto", borderRadius: "22px", background: "#fff" }} width={780} height={1946} />
                   <figcaption style={{ fontSize: "13px", fontWeight: "600", color: "#fff", textAlign: "center" }}>
                     Meus MTRs · Transportador
                   </figcaption>
                 </figure>
                 <figure style={{ margin: "0", display: "flex", flexDirection: "column", gap: "10px", minWidth: "0" }}>
-                  <Image src="/assets/siag-m-lista-dest.webp" loading="lazy" alt="Meus MTRs na visão do destinador" style={{ display: "block", width: "100%", height: "auto", borderRadius: "22px", background: "#fff" }} width={780} height={1946} />
+                  <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/siag-m-lista-dest.webp" loading="lazy" alt="Meus MTRs na visão do destinador" style={{ display: "block", width: "100%", height: "auto", borderRadius: "22px", background: "#fff" }} width={780} height={1946} />
                   <figcaption style={{ fontSize: "13px", fontWeight: "600", color: "#fff", textAlign: "center" }}>
                     Meus MTRs · Destinador
                   </figcaption>
                 </figure>
                 <figure style={{ margin: "0", display: "flex", flexDirection: "column", gap: "10px", minWidth: "0" }}>
-                  <Image src="/assets/siag-m-lotes-coleta.webp" loading="lazy" alt="Lotes para coletar com divergência de peso sinalizada" style={{ display: "block", width: "100%", height: "auto", borderRadius: "22px", background: "#fff" }} width={780} height={1962} />
+                  <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/siag-m-lotes-coleta.webp" loading="lazy" alt="Lotes para coletar com divergência de peso sinalizada" style={{ display: "block", width: "100%", height: "auto", borderRadius: "22px", background: "#fff" }} width={780} height={1962} />
                   <figcaption style={{ fontSize: "13px", fontWeight: "600", color: "#fff", textAlign: "center" }}>
                     Lotes para coletar
                   </figcaption>
                 </figure>
                 <figure style={{ margin: "0", display: "flex", flexDirection: "column", gap: "10px", minWidth: "0" }}>
-                  <Image src="/assets/siag-m-lotes-receb.webp" loading="lazy" alt="Lotes para recebimento com divergência de peso sinalizada" style={{ display: "block", width: "100%", height: "auto", borderRadius: "22px", background: "#fff" }} width={780} height={1908} />
+                  <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/siag-m-lotes-receb.webp" loading="lazy" alt="Lotes para recebimento com divergência de peso sinalizada" style={{ display: "block", width: "100%", height: "auto", borderRadius: "22px", background: "#fff" }} width={780} height={1908} />
                   <figcaption style={{ fontSize: "13px", fontWeight: "600", color: "#fff", textAlign: "center" }}>
                     Lotes para recebimento
                   </figcaption>
@@ -788,25 +788,25 @@ export function SiagresBody() {
               </div>
               <div data-m="row" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(100%,190px),1fr))", gap: "clamp(12px,1.6vw,24px)" }}>
                 <figure style={{ margin: "0", display: "flex", flexDirection: "column", gap: "10px", minWidth: "0" }}>
-                  <Image src="/assets/siag-m-gerador-coleta.webp" loading="lazy" alt="Gerador confirmado, com ações de confirmar ou recusar participação" style={{ display: "block", width: "100%", height: "auto", borderRadius: "22px", background: "#fff" }} width={780} height={1838} />
+                  <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/siag-m-gerador-coleta.webp" loading="lazy" alt="Gerador confirmado, com ações de confirmar ou recusar participação" style={{ display: "block", width: "100%", height: "auto", borderRadius: "22px", background: "#fff" }} width={780} height={1838} />
                   <figcaption style={{ fontSize: "13px", fontWeight: "600", color: "#fff", textAlign: "center" }}>
                     Confirmar participação
                   </figcaption>
                 </figure>
                 <figure style={{ margin: "0", display: "flex", flexDirection: "column", gap: "10px", minWidth: "0" }}>
-                  <Image src="/assets/siag-m-destinador.webp" loading="lazy" alt="Destinador com status pendente" style={{ display: "block", width: "100%", height: "auto", borderRadius: "22px", background: "#fff" }} width={780} height={1812} />
+                  <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/siag-m-destinador.webp" loading="lazy" alt="Destinador com status pendente" style={{ display: "block", width: "100%", height: "auto", borderRadius: "22px", background: "#fff" }} width={780} height={1812} />
                   <figcaption style={{ fontSize: "13px", fontWeight: "600", color: "#fff", textAlign: "center" }}>
                     Destinador pendente
                   </figcaption>
                 </figure>
                 <figure style={{ margin: "0", display: "flex", flexDirection: "column", gap: "10px", minWidth: "0" }}>
-                  <Image src="/assets/siag-m-gerador-aguardando.webp" loading="lazy" alt="Ação bloqueada aguardando o transportador" style={{ display: "block", width: "100%", height: "auto", borderRadius: "22px", background: "#fff" }} width={780} height={1812} />
+                  <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/siag-m-gerador-aguardando.webp" loading="lazy" alt="Ação bloqueada aguardando o transportador" style={{ display: "block", width: "100%", height: "auto", borderRadius: "22px", background: "#fff" }} width={780} height={1812} />
                   <figcaption style={{ fontSize: "13px", fontWeight: "600", color: "#fff", textAlign: "center" }}>
                     Aguardando transportador
                   </figcaption>
                 </figure>
                 <figure style={{ margin: "0", display: "flex", flexDirection: "column", gap: "10px", minWidth: "0" }}>
-                  <Image src="/assets/siag-m-transportador.webp" loading="lazy" alt="Transportador confirmado, com confirmar recebimento ou receber com ressalva" style={{ display: "block", width: "100%", height: "auto", borderRadius: "22px", background: "#fff" }} width={780} height={1812} />
+                  <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/siag-m-transportador.webp" loading="lazy" alt="Transportador confirmado, com confirmar recebimento ou receber com ressalva" style={{ display: "block", width: "100%", height: "auto", borderRadius: "22px", background: "#fff" }} width={780} height={1812} />
                   <figcaption style={{ fontSize: "13px", fontWeight: "600", color: "#fff", textAlign: "center" }}>
                     Receber com ou sem ressalva
                   </figcaption>

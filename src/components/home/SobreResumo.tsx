@@ -7,7 +7,7 @@ export function SobreResumo() {
     <section id="sobre" style={{ background: "#fafafc", padding: "clamp(72px,8vw,120px) clamp(20px,5vw,80px) clamp(48px,5vw,72px)" }}>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(100%,460px),1fr))", gap: "clamp(28px,4vw,72px)", alignItems: "stretch" }}>
         <div style={{ position: "relative", minWidth: "0", minHeight: "340px", borderRadius: "28px", overflow: "hidden" }}>
-          <Image src="/assets/sobre-time.webp" loading="lazy" alt="Eric em reunião de produto" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover", display: "block" }} width={1448} height={1086} />
+          <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/sobre-time.webp" loading="lazy" alt="Eric em reunião de produto" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover", display: "block" }} width={1448} height={1086} />
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: "20px", minWidth: "0", justifyContent: "center" }}>
           <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", gap: "12px" }}>

@@ -32,6 +32,9 @@ export function RevealScanner() {
       seen.add(el);
       const cs = getComputedStyle(el);
       if (cs.position === 'absolute' || cs.position === 'fixed' || (el.style.transform && el.style.transform !== 'none')) return;
+      // Já visível quando o script roda: não esconder (evita o "pisca" visível → oculto → fade)
+      const r = el.getBoundingClientRect();
+      if (r.top < window.innerHeight && r.bottom > 0) return;
       el.style.opacity = '0';
       el.style.transform = 'translateY(28px)';
       el.style.willChange = 'opacity, transform';
@@ -39,7 +42,8 @@ export function RevealScanner() {
       io.observe(el);
     };
     const scan = () => {
-      document.querySelectorAll<HTMLElement>('main section > div:not([style*="absolute"]) > *').forEach((el) => {
+      // O hero (#inicio) tem só a animação própria da foto (docs/07), sem reveal.
+      document.querySelectorAll<HTMLElement>('main section:not(#inicio) > div:not([style*="absolute"]) > *').forEach((el) => {
         if (seen.has(el)) return;
         const cs = getComputedStyle(el);
         const kids = el.children;

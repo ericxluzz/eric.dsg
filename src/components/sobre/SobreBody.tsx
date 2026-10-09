@@ -83,7 +83,7 @@ export function SobreBody() {
                 </div>
                 <div style={{ flex: "1 1 300px", display: "flex", gap: "16px", alignItems: "flex-start", minWidth: "0" }}>
                   <span style={{ width: "40px", height: "40px", borderRadius: "10px", background: "#fff", border: "1px solid rgba(16,16,20,.08)", display: "grid", placeItems: "center", flexShrink: "0", overflow: "hidden", boxSizing: "border-box", padding: "5px" }}>
-                    <Image src="/assets/logos/fraktal.png" alt="" style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }} width={400} height={400} />
+                    <Image sizes="96px" src="/assets/logos/fraktal.png" alt="" style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }} width={400} height={400} />
                   </span>
                   <div style={{ display: "flex", flexDirection: "column", gap: "6px", minWidth: "0" }}>
                     <div style={{ display: "flex", flexWrap: "wrap", alignItems: "baseline", gap: "4px 10px" }}>
@@ -108,7 +108,7 @@ export function SobreBody() {
                 </div>
                 <div style={{ flex: "1 1 300px", display: "flex", gap: "16px", alignItems: "flex-start", minWidth: "0" }}>
                   <span style={{ width: "40px", height: "40px", borderRadius: "10px", background: "#000", border: "1px solid rgba(16,16,20,.08)", display: "grid", placeItems: "center", flexShrink: "0", overflow: "hidden", boxSizing: "border-box", padding: "0" }}>
-                    <Image src="/assets/logos/a3.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} width={400} height={400} />
+                    <Image sizes="96px" src="/assets/logos/a3.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} width={400} height={400} />
                   </span>
                   <div style={{ display: "flex", flexDirection: "column", gap: "6px", minWidth: "0" }}>
                     <div style={{ display: "flex", flexWrap: "wrap", alignItems: "baseline", gap: "4px 10px" }}>
@@ -147,7 +147,7 @@ export function SobreBody() {
                 </div>
                 <div style={{ flex: "1 1 300px", display: "flex", gap: "16px", alignItems: "flex-start", minWidth: "0" }}>
                   <span style={{ width: "40px", height: "40px", borderRadius: "10px", background: "#fff", border: "1px solid rgba(16,16,20,.08)", display: "grid", placeItems: "center", flexShrink: "0", overflow: "hidden", boxSizing: "border-box", padding: "4px" }}>
-                    <Image src="/assets/logos/pmbv.png" alt="" style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }} width={400} height={400} />
+                    <Image sizes="96px" src="/assets/logos/pmbv.png" alt="" style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }} width={400} height={400} />
                   </span>
                   <div style={{ display: "flex", flexDirection: "column", gap: "6px", minWidth: "0" }}>
                     <div style={{ display: "flex", flexWrap: "wrap", alignItems: "baseline", gap: "4px 10px" }}>
@@ -172,7 +172,7 @@ export function SobreBody() {
                 </div>
                 <div style={{ flex: "1 1 300px", display: "flex", gap: "16px", alignItems: "flex-start", minWidth: "0" }}>
                   <span style={{ width: "40px", height: "40px", borderRadius: "10px", background: "#000", border: "1px solid rgba(16,16,20,.08)", display: "grid", placeItems: "center", flexShrink: "0", overflow: "hidden", boxSizing: "border-box", padding: "0" }}>
-                    <Image src="/assets/logos/masterw.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} width={640} height={640} />
+                    <Image sizes="96px" src="/assets/logos/masterw.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} width={640} height={640} />
                   </span>
                   <div style={{ display: "flex", flexDirection: "column", gap: "6px", minWidth: "0" }}>
                     <div style={{ display: "flex", flexWrap: "wrap", alignItems: "baseline", gap: "4px 10px" }}>
@@ -202,7 +202,7 @@ export function SobreBody() {
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(100%,300px),1fr))", columnGap: "32px" }}>
                 <div style={{ display: "flex", gap: "14px", alignItems: "center", padding: "14px 0", borderBottom: "1px solid #e1e1e6", minWidth: "0" }}>
                   <span style={{ width: "40px", height: "40px", borderRadius: "10px", background: "#ffe01b", border: "1px solid rgba(16,16,20,.08)", display: "grid", placeItems: "center", flexShrink: "0", overflow: "hidden", boxSizing: "border-box", padding: "0" }}>
-                    <Image src="/assets/logos/designcircuit.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} width={200} height={200} />
+                    <Image sizes="96px" src="/assets/logos/designcircuit.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} width={200} height={200} />
                   </span>
                   <div style={{ display: "flex", flexDirection: "column", gap: "2px", minWidth: "0", flex: "1" }}>
                     <span style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap", fontSize: "15px", fontWeight: "600" }}>
@@ -220,7 +220,7 @@ export function SobreBody() {
                 </div>
                 <div style={{ display: "flex", gap: "14px", alignItems: "center", padding: "14px 0", borderBottom: "1px solid #e1e1e6", minWidth: "0" }}>
                   <span style={{ width: "40px", height: "40px", borderRadius: "10px", background: "#ffe01b", border: "1px solid rgba(16,16,20,.08)", display: "grid", placeItems: "center", flexShrink: "0", overflow: "hidden", boxSizing: "border-box", padding: "0" }}>
-                    <Image src="/assets/logos/designcircuit.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} width={200} height={200} />
+                    <Image sizes="96px" src="/assets/logos/designcircuit.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} width={200} height={200} />
                   </span>
                   <div style={{ display: "flex", flexDirection: "column", gap: "2px", minWidth: "0", flex: "1" }}>
                     <span style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap", fontSize: "15px", fontWeight: "600" }}>
@@ -238,7 +238,7 @@ export function SobreBody() {
                 </div>
                 <div style={{ display: "flex", gap: "14px", alignItems: "center", padding: "14px 0", borderBottom: "1px solid #e1e1e6", minWidth: "0" }}>
                   <span style={{ width: "40px", height: "40px", borderRadius: "10px", background: "#fff", border: "1px solid rgba(16,16,20,.08)", display: "grid", placeItems: "center", flexShrink: "0", overflow: "hidden", boxSizing: "border-box", padding: "6px" }}>
-                    <Image src="/assets/logos/unifatecie.png" alt="" style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }} width={144} height={144} />
+                    <Image sizes="96px" src="/assets/logos/unifatecie.png" alt="" style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }} width={144} height={144} />
                   </span>
                   <div style={{ display: "flex", flexDirection: "column", gap: "2px", minWidth: "0", flex: "1" }}>
                     <span style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap", fontSize: "15px", fontWeight: "600" }}>
@@ -251,7 +251,7 @@ export function SobreBody() {
                 </div>
                 <div style={{ display: "flex", gap: "14px", alignItems: "center", padding: "14px 0", borderBottom: "1px solid #e1e1e6", minWidth: "0" }}>
                   <span style={{ width: "40px", height: "40px", borderRadius: "10px", background: "#ffe01b", border: "1px solid rgba(16,16,20,.08)", display: "grid", placeItems: "center", flexShrink: "0", overflow: "hidden", boxSizing: "border-box", padding: "0" }}>
-                    <Image src="/assets/logos/designcircuit.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} width={200} height={200} />
+                    <Image sizes="96px" src="/assets/logos/designcircuit.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} width={200} height={200} />
                   </span>
                   <div style={{ display: "flex", flexDirection: "column", gap: "2px", minWidth: "0", flex: "1" }}>
                     <span style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap", fontSize: "15px", fontWeight: "600" }}>
@@ -264,7 +264,7 @@ export function SobreBody() {
                 </div>
                 <div style={{ display: "flex", gap: "14px", alignItems: "center", padding: "14px 0", borderBottom: "1px solid #e1e1e6", minWidth: "0" }}>
                   <span style={{ width: "40px", height: "40px", borderRadius: "10px", background: "#ffe01b", border: "1px solid rgba(16,16,20,.08)", display: "grid", placeItems: "center", flexShrink: "0", overflow: "hidden", boxSizing: "border-box", padding: "0" }}>
-                    <Image src="/assets/logos/designcircuit.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} width={200} height={200} />
+                    <Image sizes="96px" src="/assets/logos/designcircuit.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} width={200} height={200} />
                   </span>
                   <div style={{ display: "flex", flexDirection: "column", gap: "2px", minWidth: "0", flex: "1" }}>
                     <span style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap", fontSize: "15px", fontWeight: "600" }}>
@@ -277,7 +277,7 @@ export function SobreBody() {
                 </div>
                 <div style={{ display: "flex", gap: "14px", alignItems: "center", padding: "14px 0", borderBottom: "1px solid #e1e1e6", minWidth: "0" }}>
                   <span style={{ width: "40px", height: "40px", borderRadius: "10px", background: "#ffe01b", border: "1px solid rgba(16,16,20,.08)", display: "grid", placeItems: "center", flexShrink: "0", overflow: "hidden", boxSizing: "border-box", padding: "0" }}>
-                    <Image src="/assets/logos/designcircuit.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} width={200} height={200} />
+                    <Image sizes="96px" src="/assets/logos/designcircuit.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} width={200} height={200} />
                   </span>
                   <div style={{ display: "flex", flexDirection: "column", gap: "2px", minWidth: "0", flex: "1" }}>
                     <span style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap", fontSize: "15px", fontWeight: "600" }}>
@@ -290,7 +290,7 @@ export function SobreBody() {
                 </div>
                 <div style={{ display: "flex", gap: "14px", alignItems: "center", padding: "14px 0", borderBottom: "1px solid #e1e1e6", minWidth: "0" }}>
                   <span style={{ width: "40px", height: "40px", borderRadius: "10px", background: "#ffe01b", border: "1px solid rgba(16,16,20,.08)", display: "grid", placeItems: "center", flexShrink: "0", overflow: "hidden", boxSizing: "border-box", padding: "0" }}>
-                    <Image src="/assets/logos/designcircuit.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} width={200} height={200} />
+                    <Image sizes="96px" src="/assets/logos/designcircuit.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} width={200} height={200} />
                   </span>
                   <div style={{ display: "flex", flexDirection: "column", gap: "2px", minWidth: "0", flex: "1" }}>
                     <span style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap", fontSize: "15px", fontWeight: "600" }}>
@@ -303,7 +303,7 @@ export function SobreBody() {
                 </div>
                 <div style={{ display: "flex", gap: "14px", alignItems: "center", padding: "14px 0", borderBottom: "1px solid #e1e1e6", minWidth: "0" }}>
                   <span style={{ width: "40px", height: "40px", borderRadius: "10px", background: "#ffe01b", border: "1px solid rgba(16,16,20,.08)", display: "grid", placeItems: "center", flexShrink: "0", overflow: "hidden", boxSizing: "border-box", padding: "0" }}>
-                    <Image src="/assets/logos/designcircuit.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} width={200} height={200} />
+                    <Image sizes="96px" src="/assets/logos/designcircuit.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} width={200} height={200} />
                   </span>
                   <div style={{ display: "flex", flexDirection: "column", gap: "2px", minWidth: "0", flex: "1" }}>
                     <span style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap", fontSize: "15px", fontWeight: "600" }}>
@@ -316,7 +316,7 @@ export function SobreBody() {
                 </div>
                 <div style={{ display: "flex", gap: "14px", alignItems: "center", padding: "14px 0", borderBottom: "1px solid #e1e1e6", minWidth: "0" }}>
                   <span style={{ width: "40px", height: "40px", borderRadius: "10px", background: "#ffe01b", border: "1px solid rgba(16,16,20,.08)", display: "grid", placeItems: "center", flexShrink: "0", overflow: "hidden", boxSizing: "border-box", padding: "0" }}>
-                    <Image src="/assets/logos/designcircuit.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} width={200} height={200} />
+                    <Image sizes="96px" src="/assets/logos/designcircuit.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} width={200} height={200} />
                   </span>
                   <div style={{ display: "flex", flexDirection: "column", gap: "2px", minWidth: "0", flex: "1" }}>
                     <span style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap", fontSize: "15px", fontWeight: "600" }}>
@@ -329,7 +329,7 @@ export function SobreBody() {
                 </div>
                 <div style={{ display: "flex", gap: "14px", alignItems: "center", padding: "14px 0", borderBottom: "1px solid #e1e1e6", minWidth: "0" }}>
                   <span style={{ width: "40px", height: "40px", borderRadius: "10px", background: "#ffe01b", border: "1px solid rgba(16,16,20,.08)", display: "grid", placeItems: "center", flexShrink: "0", overflow: "hidden", boxSizing: "border-box", padding: "0" }}>
-                    <Image src="/assets/logos/designcircuit.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} width={200} height={200} />
+                    <Image sizes="96px" src="/assets/logos/designcircuit.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} width={200} height={200} />
                   </span>
                   <div style={{ display: "flex", flexDirection: "column", gap: "2px", minWidth: "0", flex: "1" }}>
                     <span style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap", fontSize: "15px", fontWeight: "600" }}>
@@ -342,7 +342,7 @@ export function SobreBody() {
                 </div>
                 <div style={{ display: "flex", gap: "14px", alignItems: "center", padding: "14px 0", borderBottom: "1px solid #e1e1e6", minWidth: "0" }}>
                   <span style={{ width: "40px", height: "40px", borderRadius: "10px", background: "#ffe01b", border: "1px solid rgba(16,16,20,.08)", display: "grid", placeItems: "center", flexShrink: "0", overflow: "hidden", boxSizing: "border-box", padding: "0" }}>
-                    <Image src="/assets/logos/designcircuit.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} width={200} height={200} />
+                    <Image sizes="96px" src="/assets/logos/designcircuit.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} width={200} height={200} />
                   </span>
                   <div style={{ display: "flex", flexDirection: "column", gap: "2px", minWidth: "0", flex: "1" }}>
                     <span style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap", fontSize: "15px", fontWeight: "600" }}>
@@ -355,7 +355,7 @@ export function SobreBody() {
                 </div>
                 <div style={{ display: "flex", gap: "14px", alignItems: "center", padding: "14px 0", borderBottom: "1px solid #e1e1e6", minWidth: "0" }}>
                   <span style={{ width: "40px", height: "40px", borderRadius: "10px", background: "#101014", border: "1px solid rgba(16,16,20,.08)", display: "grid", placeItems: "center", flexShrink: "0", overflow: "hidden", boxSizing: "border-box", padding: "0" }}>
-                    <Image src="/assets/logos/aicb-white.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} width={495} height={150} />
+                    <Image sizes="96px" src="/assets/logos/aicb-white.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} width={495} height={150} />
                   </span>
                   <div style={{ display: "flex", flexDirection: "column", gap: "2px", minWidth: "0", flex: "1" }}>
                     <span style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap", fontSize: "15px", fontWeight: "600" }}>
@@ -368,7 +368,7 @@ export function SobreBody() {
                 </div>
                 <div style={{ display: "flex", gap: "14px", alignItems: "center", padding: "14px 0", borderBottom: "1px solid #e1e1e6", minWidth: "0" }}>
                   <span style={{ width: "40px", height: "40px", borderRadius: "10px", background: "#0b0718", border: "1px solid rgba(16,16,20,.08)", display: "grid", placeItems: "center", flexShrink: "0", overflow: "hidden", boxSizing: "border-box", padding: "0" }}>
-                    <Image src="/assets/logos/mf-mark.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} width={200} height={200} />
+                    <Image sizes="96px" src="/assets/logos/mf-mark.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} width={200} height={200} />
                   </span>
                   <div style={{ display: "flex", flexDirection: "column", gap: "2px", minWidth: "0", flex: "1" }}>
                     <span style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap", fontSize: "15px", fontWeight: "600" }}>
@@ -381,7 +381,7 @@ export function SobreBody() {
                 </div>
                 <div style={{ display: "flex", gap: "14px", alignItems: "center", padding: "14px 0", borderBottom: "1px solid #e1e1e6", minWidth: "0" }}>
                   <span style={{ width: "40px", height: "40px", borderRadius: "10px", background: "#fff", border: "1px solid rgba(16,16,20,.08)", display: "grid", placeItems: "center", flexShrink: "0", overflow: "hidden", boxSizing: "border-box", padding: "6px" }}>
-                    <Image src="/assets/logos/udemy.png" alt="" style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }} width={176} height={192} />
+                    <Image sizes="96px" src="/assets/logos/udemy.png" alt="" style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }} width={176} height={192} />
                   </span>
                   <div style={{ display: "flex", flexDirection: "column", gap: "2px", minWidth: "0", flex: "1" }}>
                     <span style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap", fontSize: "15px", fontWeight: "600" }}>

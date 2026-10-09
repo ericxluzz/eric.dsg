@@ -27,7 +27,7 @@ export function ProjetosGrid() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(100%,360px),1fr))", columnGap: "clamp(16px,1.6vw,28px)", rowGap: "0" }}>
           <Link href="/cases/siagres" className="hv-563089" style={{ cursor: "pointer", minWidth: "0", display: "grid", gridRow: "span 4", gridTemplateRows: "subgrid", rowGap: "18px", alignContent: "start", background: "#e3f2e7", borderRadius: "32px", padding: "clamp(12px,1.2vw,16px) clamp(12px,1.2vw,16px) clamp(20px,2vw,28px)", marginBottom: "clamp(16px,1.6vw,28px)", color: "#101014", transition: "background .25s" }}>
             <div style={{ position: "relative", aspectRatio: "4/3", borderRadius: "22px", overflow: "hidden", background: "linear-gradient(135deg,#0a4a24 0%,#0b6b32 55%,#2f9a55 100%)" }}>
-              <Image src="/assets/siag-detalhe.webp" loading="lazy" alt="Detalhamento de MTR no SIAGRES" style={{ position: "absolute", left: "10%", top: "16%", width: "110%", height: "auto", maxWidth: "none", display: "block", borderRadius: "10px 0 0 0", boxShadow: "0 20px 40px rgba(4,30,14,.3)" }} width={1440} height={1352} />
+              <Image sizes="(max-width: 767px) 100vw, 33vw" src="/assets/siag-detalhe.webp" loading="lazy" alt="Detalhamento de MTR no SIAGRES" style={{ position: "absolute", left: "10%", top: "16%", width: "110%", height: "auto", maxWidth: "none", display: "block", borderRadius: "10px 0 0 0", boxShadow: "0 20px 40px rgba(4,30,14,.3)" }} width={1440} height={1352} />
             </div>
             <h3 style={{ margin: "0 clamp(6px,1vw,14px)", fontFamily: "inherit", fontWeight: "500", fontSize: "clamp(21px,1.6vw,26px)", lineHeight: "1.15", letterSpacing: "-.025em", textWrap: "balance" }}>
               SIAGRES: uma operação regulada transformada em experiência digital
@@ -53,7 +53,7 @@ export function ProjetosGrid() {
           </Link>
           <Link href="/cases/e-matriculas" className="hv-5110b7" style={{ cursor: "pointer", minWidth: "0", display: "grid", gridRow: "span 4", gridTemplateRows: "subgrid", rowGap: "18px", alignContent: "start", background: "#dcf3f0", borderRadius: "32px", padding: "clamp(12px,1.2vw,16px) clamp(12px,1.2vw,16px) clamp(20px,2vw,28px)", marginBottom: "clamp(16px,1.6vw,28px)", color: "#101014", transition: "background .25s" }}>
             <div style={{ position: "relative", aspectRatio: "4/3", borderRadius: "22px", overflow: "hidden", background: "linear-gradient(135deg,#0e7c86 0%,#14a3a8 55%,#5fd0c4 100%)" }}>
-              <Image src="/assets/case-ematriculas-phones.webp" loading="lazy" alt="Telas do app e-Matrículas em dois iPhones" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", display: "block", transform: "scale(1.45)", transformOrigin: "center 4%" }} width={2400} height={1800} />
+              <Image sizes="(max-width: 767px) 100vw, 33vw" src="/assets/case-ematriculas-phones.webp" loading="lazy" alt="Telas do app e-Matrículas em dois iPhones" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", display: "block", transform: "scale(1.45)", transformOrigin: "center 4%" }} width={2400} height={1800} />
             </div>
             <h3 style={{ margin: "0 clamp(6px,1vw,14px)", fontFamily: "inherit", fontWeight: "500", fontSize: "clamp(21px,1.6vw,26px)", lineHeight: "1.15", letterSpacing: "-.025em", textWrap: "balance" }}>
               e-Matrículas: inscrição escolar sem filas
@@ -79,7 +79,7 @@ export function ProjetosGrid() {
           </Link>
           <Link href="/cases/eventure" className="hv-5830a2" style={{ cursor: "pointer", minWidth: "0", display: "grid", gridRow: "span 4", gridTemplateRows: "subgrid", rowGap: "18px", alignContent: "start", background: "#ece6ff", borderRadius: "32px", padding: "clamp(12px,1.2vw,16px) clamp(12px,1.2vw,16px) clamp(20px,2vw,28px)", marginBottom: "clamp(16px,1.6vw,28px)", color: "#101014", transition: "background .25s" }}>
             <div style={{ position: "relative", aspectRatio: "4/3", borderRadius: "22px", overflow: "hidden", background: "linear-gradient(135deg,#3a12b8 0%,#5b21e6 55%,#8b5cf6 100%)" }}>
-              <Image src="/assets/case-eventure.webp" loading="lazy" alt="Telas do app Eventure em três iPhones: ingressos, evento e QR code" style={{ position: "absolute", left: "50%", top: "16%", transform: "translateX(-50%)", width: "100%", maxWidth: "none", height: "auto", display: "block" }} width={1600} height={1200} />
+              <Image sizes="(max-width: 767px) 100vw, 33vw" src="/assets/case-eventure.webp" loading="lazy" alt="Telas do app Eventure em três iPhones: ingressos, evento e QR code" style={{ position: "absolute", left: "50%", top: "16%", transform: "translateX(-50%)", width: "100%", maxWidth: "none", height: "auto", display: "block" }} width={1600} height={1200} />
             </div>
             <h3 style={{ margin: "0 clamp(6px,1vw,14px)", fontFamily: "inherit", fontWeight: "500", fontSize: "clamp(21px,1.6vw,26px)", lineHeight: "1.15", letterSpacing: "-.025em", textWrap: "balance" }}>
               Eventure: a agenda cultural da cidade em um app

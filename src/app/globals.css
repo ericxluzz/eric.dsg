@@ -79,6 +79,7 @@
   from { opacity: 0; transform: translateY(36px) scale(.985); filter: blur(8px) drop-shadow(0 20px 40px rgba(7,22,92,0)); }
   to   { opacity: 1; transform: none; filter: blur(0) drop-shadow(0 20px 40px rgba(7,22,92,.25)); }
 }
+@keyframes heroPhotoInMobile { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
 @keyframes mIn { from { opacity: 0; transform: translateY(-8px) scale(.98); } to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: reduce) { img[alt="Eric Luz"] { animation: none !important; } }
 
@@ -129,7 +130,9 @@
   #inicio { min-height: 0 !important; }
   #inicio > div:first-child { padding-top: 108px !important; }
   #inicio > div:first-child > div:nth-child(2) { padding-bottom: 8px !important; gap: 20px !important; }
-  #inicio img[alt="Eric Luz"] { height: min(70vh, 560px) !important; margin-top: -24px !important; }
+  /* svh: altura estável (não muda quando a barra do navegador recolhe). Entrada sem blur:
+     filtro animado numa imagem grande pesa na GPU do celular (docs/09). */
+  #inicio img[alt="Eric Luz"] { height: min(70vh, 560px) !important; height: min(70svh, 560px) !important; margin-top: -24px !important; animation-name: heroPhotoInMobile !important; }
 }
 
 /* Mascote: antes do script carregar, já some no mobile (exceto hi ou mobile="show") */

@@ -62,7 +62,7 @@ export function EventureBody() {
             </div>
           </div>
           <div style={{ position: "relative", borderRadius: "clamp(18px,2.4vw,32px)", overflow: "hidden", background: "linear-gradient(135deg,#6d28ff 0%,#8b5cf6 100%)", aspectRatio: "2.1/1", maxHeight: "640px" }}>
-            <Image src="/assets/eventure-phones.webp" alt="Telas do app Eventure: login, início com eventos próximos e detalhe de evento" style={{ position: "absolute", left: "50%", top: "56%", transform: "translate(-50%,-50%)", height: "112%", width: "auto", maxWidth: "none", display: "block" }} width={1800} height={1350} />
+            <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/eventure-phones.webp" alt="Telas do app Eventure: login, início com eventos próximos e detalhe de evento" style={{ position: "absolute", left: "50%", top: "56%", transform: "translate(-50%,-50%)", height: "112%", width: "auto", maxWidth: "none", display: "block" }} width={1800} height={1350} />
           </div>
         </div>
       </section>
@@ -181,7 +181,7 @@ export function EventureBody() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(100%,300px),1fr))", gap: "12px" }}>
             <article style={{ display: "flex", flexDirection: "column", borderRadius: "24px", overflow: "hidden", background: "#fff", border: "1px solid #e6e6eb", minWidth: "0" }}>
               <div style={{ position: "relative", aspectRatio: "16/10", overflow: "hidden", background: "#ffd84a" }}>
-                <Image src="/assets/eventure-web.webp" loading="lazy" alt="Home web do Eventure" style={{ position: "absolute", left: "8%", top: "12%", width: "100%", height: "auto", borderRadius: "10px 0 0 0", display: "block" }} width={1232} height={2576} />
+                <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/eventure-web.webp" loading="lazy" alt="Home web do Eventure" style={{ position: "absolute", left: "8%", top: "12%", width: "100%", height: "auto", borderRadius: "10px 0 0 0", display: "block" }} width={1232} height={2576} />
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "8px", padding: "clamp(18px,2vw,24px)" }}>
                 <span style={{ fontSize: "12px", fontWeight: "600", letterSpacing: ".12em", textTransform: "uppercase", color: "#5b16e0" }}>
@@ -197,7 +197,7 @@ export function EventureBody() {
             </article>
             <article style={{ display: "flex", flexDirection: "column", borderRadius: "24px", overflow: "hidden", background: "#fff", border: "1px solid #e6e6eb", minWidth: "0" }}>
               <div style={{ position: "relative", aspectRatio: "16/10", overflow: "hidden", background: "#efe9ff" }}>
-                <Image src="/assets/ev-g-inicio.webp" loading="lazy" alt="Painel web do gestor" style={{ position: "absolute", left: "8%", top: "12%", width: "110%", height: "auto", borderRadius: "10px 0 0 0", display: "block" }} width={1720} height={1112} />
+                <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/ev-g-inicio.webp" loading="lazy" alt="Painel web do gestor" style={{ position: "absolute", left: "8%", top: "12%", width: "110%", height: "auto", borderRadius: "10px 0 0 0", display: "block" }} width={1720} height={1112} />
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "8px", padding: "clamp(18px,2vw,24px)" }}>
                 <span style={{ fontSize: "12px", fontWeight: "600", letterSpacing: ".12em", textTransform: "uppercase", color: "#5b16e0" }}>
@@ -213,7 +213,7 @@ export function EventureBody() {
             </article>
             <article style={{ display: "flex", flexDirection: "column", borderRadius: "24px", overflow: "hidden", background: "#fff", border: "1px solid #e6e6eb", minWidth: "0" }}>
               <div style={{ position: "relative", aspectRatio: "16/10", overflow: "hidden", background: "#8b5cf6" }}>
-                <Image src="/assets/ev-m-inicio.webp" loading="lazy" alt="App mobile do gestor" style={{ position: "absolute", left: "50%", top: "12%", transform: "translateX(-50%)", width: "44%", height: "auto", borderRadius: "18px", display: "block" }} width={786} height={1704} />
+                <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/ev-m-inicio.webp" loading="lazy" alt="App mobile do gestor" style={{ position: "absolute", left: "50%", top: "12%", transform: "translateX(-50%)", width: "44%", height: "auto", borderRadius: "18px", display: "block" }} width={786} height={1704} />
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "8px", padding: "clamp(18px,2vw,24px)" }}>
                 <span style={{ fontSize: "12px", fontWeight: "600", letterSpacing: ".12em", textTransform: "uppercase", color: "#5b16e0" }}>
@@ -502,7 +502,7 @@ export function EventureBody() {
                 </div>
               </div>
               <div style={{ flex: "1.3 1 420px", minWidth: "0", alignSelf: "flex-end", display: "flex", justifyContent: "center", padding: "clamp(24px,3vw,44px) clamp(28px,4vw,64px) 0 clamp(8px,1vw,16px)", boxSizing: "border-box" }}>
-                <Image src="/assets/ev-mk-discover.webp" loading="lazy" alt="Home do app com localização e categorias, e detalhe do evento Conexão Musical" style={{ display: "block", width: "100%", maxWidth: "700px", height: "auto", marginBottom: "-4%" }} width={1400} height={1166} />
+                <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/ev-mk-discover.webp" loading="lazy" alt="Home do app com localização e categorias, e detalhe do evento Conexão Musical" style={{ display: "block", width: "100%", maxWidth: "700px", height: "auto", marginBottom: "-4%" }} width={1400} height={1166} />
               </div>
             </article>
             <article style={{ position: "relative", overflow: "hidden", borderRadius: "clamp(22px,2.4vw,32px)", background: "radial-gradient(90% 80% at 80% 100%,#ffc2ee 0%,rgba(255,194,238,0) 60%),#f3e8ff", display: "flex", flexDirection: "column", minHeight: "clamp(460px,38vw,560px)" }}>
@@ -519,7 +519,7 @@ export function EventureBody() {
                   </p>
                 </div>
               </div>
-              <Image src="/assets/ev-mk-presence.webp" loading="lazy" alt="Meus eventos e detalhe do Desafio de Natação com 28 pessoas confirmadas" style={{ display: "block", width: "112%", maxWidth: "none", height: "auto", margin: "auto -4% -14% auto" }} width={1400} height={1159} />
+              <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/ev-mk-presence.webp" loading="lazy" alt="Meus eventos e detalhe do Desafio de Natação com 28 pessoas confirmadas" style={{ display: "block", width: "112%", maxWidth: "none", height: "auto", margin: "auto -4% -14% auto" }} width={1400} height={1159} />
             </article>
             <article style={{ position: "relative", overflow: "hidden", borderRadius: "clamp(22px,2.4vw,32px)", background: "#fff", border: "2px solid #ffd84a", display: "flex", flexDirection: "column", minHeight: "clamp(460px,38vw,560px)" }}>
               <div style={{ padding: "clamp(26px,3vw,44px) clamp(26px,3vw,44px) 0", position: "relative", zIndex: "1" }}>
@@ -535,7 +535,7 @@ export function EventureBody() {
                   </p>
                 </div>
               </div>
-              <Image src="/assets/ev-mk-tickets.webp" loading="lazy" alt="Ingressos VIP com QR Code nos temas claro e escuro" style={{ display: "block", width: "108%", maxWidth: "none", height: "auto", margin: "auto -8% -10% auto", WebkitMaskImage: "linear-gradient(to bottom,transparent 0%,#000 18%)", maskImage: "linear-gradient(to bottom,transparent 0%,#000 18%)" }} width={1400} height={1159} />
+              <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/ev-mk-tickets.webp" loading="lazy" alt="Ingressos VIP com QR Code nos temas claro e escuro" style={{ display: "block", width: "108%", maxWidth: "none", height: "auto", margin: "auto -8% -10% auto", WebkitMaskImage: "linear-gradient(to bottom,transparent 0%,#000 18%)", maskImage: "linear-gradient(to bottom,transparent 0%,#000 18%)" }} width={1400} height={1159} />
             </article>
             <article style={{ gridColumn: "1/-1", borderRadius: "clamp(22px,2.4vw,32px)", background: "#efe9ff", padding: "clamp(20px,3vw,40px)", display: "flex", flexDirection: "column", gap: "clamp(18px,2vw,28px)" }}>
               <div style={{ display: "flex", flexDirection: "column", gap: "12px", maxWidth: "1080px" }}>
@@ -581,10 +581,10 @@ export function EventureBody() {
                   </div>
                   {" "}
                   <div style={{ position: "relative", aspectRatio: "1720/1117" }}>
-                    <Image src="/assets/ev-g-inicio.webp" alt="Início do painel do gestor com eventos, confirmados e receita" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover", objectPosition: "top", display: "block", opacity: op_inicio, transition: "opacity .35s ease" }} width={1720} height={1112} />
-                    <Image src="/assets/ev-g-eventos.webp" loading="lazy" alt="Lista de eventos do gestor com público, datas e categorias" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover", objectPosition: "top", display: "block", opacity: op_eventos, transition: "opacity .35s ease" }} width={1720} height={1112} />
-                    <Image src="/assets/ev-g-ingressos.webp" loading="lazy" alt="Gestão de ingressos públicos, avulsos e não validados" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover", objectPosition: "top", display: "block", opacity: op_ingressos, transition: "opacity .35s ease" }} width={1720} height={1129} />
-                    <Image src="/assets/ev-g-financeiro.webp" loading="lazy" alt="Painel financeiro com transações, formas de pagamento e receita por evento" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover", objectPosition: "top", display: "block", opacity: op_financeiro, transition: "opacity .35s ease" }} width={1720} height={1112} />
+                    <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/ev-g-inicio.webp" alt="Início do painel do gestor com eventos, confirmados e receita" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover", objectPosition: "top", display: "block", opacity: op_inicio, transition: "opacity .35s ease" }} width={1720} height={1112} />
+                    <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/ev-g-eventos.webp" loading="lazy" alt="Lista de eventos do gestor com público, datas e categorias" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover", objectPosition: "top", display: "block", opacity: op_eventos, transition: "opacity .35s ease" }} width={1720} height={1112} />
+                    <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/ev-g-ingressos.webp" loading="lazy" alt="Gestão de ingressos públicos, avulsos e não validados" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover", objectPosition: "top", display: "block", opacity: op_ingressos, transition: "opacity .35s ease" }} width={1720} height={1129} />
+                    <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/ev-g-financeiro.webp" loading="lazy" alt="Painel financeiro com transações, formas de pagamento e receita por evento" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover", objectPosition: "top", display: "block", opacity: op_financeiro, transition: "opacity .35s ease" }} width={1720} height={1112} />
                   </div>
                 </div>
               </div>
@@ -607,31 +607,31 @@ export function EventureBody() {
               </div>
               <div data-m="row" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(100%,170px),1fr))", gap: "clamp(12px,1.6vw,24px)", padding: "0" }}>
                 <figure style={{ margin: "0", display: "flex", flexDirection: "column", gap: "10px", minWidth: "0" }}>
-                  <Image src="/assets/ev-m-login.webp" loading="lazy" alt="Login do administrador por CPF e senha" style={{ display: "block", width: "100%", height: "auto", aspectRatio: "393/852", borderRadius: "22px", border: "1px solid rgba(255,255,255,.2)", background: "#fff" }} width={786} height={1704} />
+                  <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/ev-m-login.webp" loading="lazy" alt="Login do administrador por CPF e senha" style={{ display: "block", width: "100%", height: "auto", aspectRatio: "393/852", borderRadius: "22px", border: "1px solid rgba(255,255,255,.2)", background: "#fff" }} width={786} height={1704} />
                   <figcaption style={{ fontSize: "13px", fontWeight: "600", color: "#fff", textAlign: "center" }}>
                     Login
                   </figcaption>
                 </figure>
                 <figure style={{ margin: "0", display: "flex", flexDirection: "column", gap: "10px", minWidth: "0" }}>
-                  <Image src="/assets/ev-m-inicio.webp" loading="lazy" alt="Início com evento acontecendo agora, atalhos e últimas transações" style={{ display: "block", width: "100%", height: "auto", aspectRatio: "393/852", borderRadius: "22px", border: "1px solid rgba(255,255,255,.2)", background: "#fff" }} width={786} height={1704} />
+                  <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/ev-m-inicio.webp" loading="lazy" alt="Início com evento acontecendo agora, atalhos e últimas transações" style={{ display: "block", width: "100%", height: "auto", aspectRatio: "393/852", borderRadius: "22px", border: "1px solid rgba(255,255,255,.2)", background: "#fff" }} width={786} height={1704} />
                   <figcaption style={{ fontSize: "13px", fontWeight: "600", color: "#fff", textAlign: "center" }}>
                     Início
                   </figcaption>
                 </figure>
                 <figure style={{ margin: "0", display: "flex", flexDirection: "column", gap: "10px", minWidth: "0" }}>
-                  <Image src="/assets/ev-m-financeiro.webp" loading="lazy" alt="Receita do evento e transações por Pix e cartão" style={{ display: "block", width: "100%", height: "auto", aspectRatio: "393/852", borderRadius: "22px", border: "1px solid rgba(255,255,255,.2)", background: "#fff" }} width={786} height={1704} />
+                  <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/ev-m-financeiro.webp" loading="lazy" alt="Receita do evento e transações por Pix e cartão" style={{ display: "block", width: "100%", height: "auto", aspectRatio: "393/852", borderRadius: "22px", border: "1px solid rgba(255,255,255,.2)", background: "#fff" }} width={786} height={1704} />
                   <figcaption style={{ fontSize: "13px", fontWeight: "600", color: "#fff", textAlign: "center" }}>
                     Financeiro
                   </figcaption>
                 </figure>
                 <figure style={{ margin: "0", display: "flex", flexDirection: "column", gap: "10px", minWidth: "0" }}>
-                  <Image src="/assets/ev-m-ingressos.webp" loading="lazy" alt="Ingressos digitais e avulsos com ação de validar" style={{ display: "block", width: "100%", height: "auto", aspectRatio: "393/852", borderRadius: "22px", border: "1px solid rgba(255,255,255,.2)", background: "#fff" }} width={786} height={1704} />
+                  <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/ev-m-ingressos.webp" loading="lazy" alt="Ingressos digitais e avulsos com ação de validar" style={{ display: "block", width: "100%", height: "auto", aspectRatio: "393/852", borderRadius: "22px", border: "1px solid rgba(255,255,255,.2)", background: "#fff" }} width={786} height={1704} />
                   <figcaption style={{ fontSize: "13px", fontWeight: "600", color: "#fff", textAlign: "center" }}>
                     Ingressos
                   </figcaption>
                 </figure>
                 <figure style={{ margin: "0", display: "flex", flexDirection: "column", gap: "10px", minWidth: "0" }}>
-                  <Image src="/assets/ev-m-validados.webp" loading="lazy" alt="Lista de ingressos já validados na entrada" style={{ display: "block", width: "100%", height: "auto", aspectRatio: "393/852", borderRadius: "22px", border: "1px solid rgba(255,255,255,.2)", background: "#fff" }} width={786} height={1704} />
+                  <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/ev-m-validados.webp" loading="lazy" alt="Lista de ingressos já validados na entrada" style={{ display: "block", width: "100%", height: "auto", aspectRatio: "393/852", borderRadius: "22px", border: "1px solid rgba(255,255,255,.2)", background: "#fff" }} width={786} height={1704} />
                   <figcaption style={{ fontSize: "13px", fontWeight: "600", color: "#fff", textAlign: "center" }}>
                     Validados
                   </figcaption>
@@ -733,7 +733,7 @@ export function EventureBody() {
                     eventure.app.com/home
                   </span>
                 </div>
-                <Image src="/assets/ev-mormaco-shows.webp" loading="lazy" alt="Shows do Mormaço Cultural cadastrados individualmente no Eventure" style={{ display: "block", width: "100%", height: "auto" }} width={1400} height={794} />
+                <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/ev-mormaco-shows.webp" loading="lazy" alt="Shows do Mormaço Cultural cadastrados individualmente no Eventure" style={{ display: "block", width: "100%", height: "auto" }} width={1400} height={794} />
               </div>
             </article>
             <article style={{ display: "flex", flexDirection: "column", borderRadius: "clamp(22px,2.4vw,32px)", overflow: "hidden", background: "#c9f0d9", minWidth: "0" }}>
@@ -763,7 +763,7 @@ export function EventureBody() {
                     eventure.app.com/organizador
                   </span>
                 </div>
-                <Image src="/assets/ev-jia.webp" loading="lazy" alt="Página da Liga das Atléticas de Roraima com os jogos no Eventure" style={{ display: "block", width: "100%", height: "auto" }} width={1160} height={895} />
+                <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/ev-jia.webp" loading="lazy" alt="Página da Liga das Atléticas de Roraima com os jogos no Eventure" style={{ display: "block", width: "100%", height: "auto" }} width={1160} height={895} />
               </div>
             </article>
           </div>

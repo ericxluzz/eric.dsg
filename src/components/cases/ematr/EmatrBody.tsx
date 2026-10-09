@@ -120,7 +120,7 @@ export function EmatrBody() {
                 <span style={{ width: "42px", display: "block" }}></span>
               </div>
               <div id="hero-scroll" style={{ flex: "1", minHeight: "0", overflowY: "auto", scrollbarWidth: "none", overscrollBehavior: "contain" }}>
-                <Image src="/assets/ematr-landing-full.webp" alt="Landing page completa do e-Matrículas" style={{ display: "block", width: "100%", height: "auto", marginTop: "-4.6%" }} width={1920} height={6586} />
+                <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/ematr-landing-full.webp" alt="Landing page completa do e-Matrículas" style={{ display: "block", width: "100%", height: "auto", marginTop: "-4.6%" }} width={1920} height={6586} />
               </div>
             </div>
             {" "}
@@ -268,7 +268,7 @@ export function EmatrBody() {
           </div>
           <div style={{ display: "flex", flexDirection: "column", borderRadius: "clamp(16px,2vw,24px)", overflow: "hidden", border: "1px solid #f3c9c9" }}>
             <div style={{ position: "relative" }}>
-              <Image src="/assets/case-ematr-filas.webp" alt="Famílias aguardando à noite em frente a uma escola municipal" style={{ display: "block", width: "100%", height: "auto" }} width={2048} height={1180} />
+              <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/case-ematr-filas.webp" alt="Famílias aguardando à noite em frente a uma escola municipal" style={{ display: "block", width: "100%", height: "auto" }} width={2048} height={1180} />
             </div>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(100%,220px),1fr))", background: "#fdf1f1" }}>
               <div style={{ display: "flex", gap: "12px", alignItems: "flex-start", padding: "clamp(16px,2vw,24px)", borderRight: "1px solid #f3c9c9", borderBottom: "1px solid #f3c9c9", margin: "0 -1px -1px 0" }}>
@@ -578,7 +578,7 @@ export function EmatrBody() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(100%,340px),1fr))", gap: "16px" }}>
             <button type="button" onClick={openAntes} aria-label="Ampliar Fluxo definido pela gestão" style={{ all: "unset", cursor: "zoom-in", display: "flex", flexDirection: "column", gap: "10px", minWidth: "0" }}>
               <span style={{ position: "relative", display: "block", borderRadius: "16px", overflow: "hidden", border: "1px solid #e6e6eb", background: "#fff" }}>
-                <Image src="/assets/ematr-fluxo-antes.webp" alt="Antes: fluxo definido pela gestão" style={{ display: "block", width: "100%", height: "auto" }} width={1672} height={941} />
+                <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/ematr-fluxo-antes.webp" alt="Antes: fluxo definido pela gestão" style={{ display: "block", width: "100%", height: "auto" }} width={1672} height={941} />
                 {" "}
                 <span style={{ position: "absolute", right: "10px", bottom: "10px", display: "inline-flex", alignItems: "center", gap: "6px", padding: "6px 10px", borderRadius: "999px", background: "#101014", color: "#fff", fontSize: "12px", fontWeight: "600" }}>
                   <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
@@ -596,7 +596,7 @@ export function EmatrBody() {
             </button>
             <button type="button" onClick={openDepois} aria-label="Ampliar Fluxo validado com as secretarias" style={{ all: "unset", cursor: "zoom-in", display: "flex", flexDirection: "column", gap: "10px", minWidth: "0" }}>
               <span style={{ position: "relative", display: "block", borderRadius: "16px", overflow: "hidden", border: "1px solid #e6e6eb", background: "#fff" }}>
-                <Image src="/assets/ematr-fluxo-depois.webp" alt="Depois: fluxo validado com as secretarias" style={{ display: "block", width: "100%", height: "auto" }} width={1672} height={941} />
+                <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/ematr-fluxo-depois.webp" alt="Depois: fluxo validado com as secretarias" style={{ display: "block", width: "100%", height: "auto" }} width={1672} height={941} />
                 {" "}
                 <span style={{ position: "absolute", right: "10px", bottom: "10px", display: "inline-flex", alignItems: "center", gap: "6px", padding: "6px 10px", borderRadius: "999px", background: "#101014", color: "#fff", fontSize: "12px", fontWeight: "600" }}>
                   <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
@@ -616,8 +616,8 @@ export function EmatrBody() {
           {(lightboxOpen) && (
             <>
               <div onClick={closeLightbox} role="dialog" aria-modal="true" aria-label="Fluxo ampliado" style={{ position: "fixed", inset: "0", zIndex: "100", background: "rgba(11,15,43,.82)", display: "grid", placeItems: "center", padding: "clamp(12px,3vw,40px)", cursor: "zoom-out" }}>
-                <Image src="/assets/ematr-fluxo-antes.webp" alt="Fluxo antes, ampliado" style={{ display: lbAntes, maxWidth: "100%", maxHeight: "100%", width: "auto", height: "auto", borderRadius: "12px", background: "#fff" }} width={1672} height={941} />
-                <Image src="/assets/ematr-fluxo-depois.webp" alt="Fluxo depois, ampliado" style={{ display: lbDepois, maxWidth: "100%", maxHeight: "100%", width: "auto", height: "auto", borderRadius: "12px", background: "#fff" }} width={1672} height={941} />
+                <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/ematr-fluxo-antes.webp" alt="Fluxo antes, ampliado" style={{ display: lbAntes, maxWidth: "100%", maxHeight: "100%", width: "auto", height: "auto", borderRadius: "12px", background: "#fff" }} width={1672} height={941} />
+                <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/ematr-fluxo-depois.webp" alt="Fluxo depois, ampliado" style={{ display: lbDepois, maxWidth: "100%", maxHeight: "100%", width: "auto", height: "auto", borderRadius: "12px", background: "#fff" }} width={1672} height={941} />
                 <span style={{ position: "fixed", top: "16px", right: "16px", width: "44px", height: "44px", borderRadius: "50%", background: "#fff", color: "#101014", display: "grid", placeItems: "center" }}>
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
                     <path d="M18 6 6 18M6 6l12 12" />
@@ -816,7 +816,7 @@ export function EmatrBody() {
           </div>
           <div style={{ display: "flex", flexWrap: "wrap", gap: "24px", alignItems: "center", padding: "clamp(16px,2.4vw,32px)", borderRadius: "clamp(16px,2vw,24px)", background: "#fff", border: "1px solid #e6e6eb" }}>
             <div style={{ flex: "1.6 1 440px", minWidth: "0", position: "relative", aspectRatio: "1/1", overflow: "hidden", margin: "clamp(-32px,-2.4vw,-16px) 0 clamp(-32px,-2.4vw,-16px) clamp(-32px,-2.4vw,-16px)" }}>
-              <Image src="/assets/ematr-status-phones.webp" alt="Telas de solicitação e linha do tempo de status no app" style={{ position: "absolute", left: "50%", top: "50%", width: "150%", height: "auto", maxWidth: "none", transform: "translate(-48%,-50%)", display: "block" }} width={2400} height={1800} />
+              <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/ematr-status-phones.webp" alt="Telas de solicitação e linha do tempo de status no app" style={{ position: "absolute", left: "50%", top: "50%", width: "150%", height: "auto", maxWidth: "none", transform: "translate(-48%,-50%)", display: "block" }} width={2400} height={1800} />
             </div>
             <ol style={{ flex: "1 1 280px", minWidth: "0", listStyle: "none", margin: "0", padding: "0", display: "flex", flexDirection: "column", gap: "0" }}>
               {(steps).map((s, i) => (
@@ -864,7 +864,7 @@ export function EmatrBody() {
             </div>
             <figure style={{ margin: "0", display: "flex", flexDirection: "column", gap: "10px" }}>
               <div style={{ borderRadius: "clamp(12px,1.6vw,20px)", overflow: "hidden", border: "1px solid #e1e1e6", background: "#fff" }}>
-                <Image src="/assets/ematr-web-home.webp" alt="Tela Meus dependentes com os cards de cada filho" style={{ display: "block", width: "100%", height: "auto" }} width={1920} height={1080} />
+                <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/ematr-web-home.webp" alt="Tela Meus dependentes com os cards de cada filho" style={{ display: "block", width: "100%", height: "auto" }} width={1920} height={1080} />
               </div>
               <figcaption style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "14px", color: "#5d5d63" }}>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4030ff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -880,7 +880,7 @@ export function EmatrBody() {
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(100%,340px),1fr))", gap: "14px" }}>
               <figure style={{ margin: "0", display: "flex", flexDirection: "column", gap: "10px" }}>
                 <div style={{ borderRadius: "clamp(12px,1.6vw,20px)", overflow: "hidden", border: "1px solid #e1e1e6", background: "#fff" }}>
-                  <Image src="/assets/ematr-web-frequencia.webp" alt="Frequência mensal em calendário e diário de classe" style={{ display: "block", width: "100%", height: "auto" }} width={1920} height={1080} />
+                  <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/ematr-web-frequencia.webp" alt="Frequência mensal em calendário e diário de classe" style={{ display: "block", width: "100%", height: "auto" }} width={1920} height={1080} />
                 </div>
                 <figcaption style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "14px", color: "#5d5d63" }}>
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4030ff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -895,7 +895,7 @@ export function EmatrBody() {
               </figure>
               <figure style={{ margin: "0", display: "flex", flexDirection: "column", gap: "10px" }}>
                 <div style={{ borderRadius: "clamp(12px,1.6vw,20px)", overflow: "hidden", border: "1px solid #e1e1e6", background: "#fff" }}>
-                  <Image src="/assets/ematr-web-notas.webp" alt="Tabela de notas bimestrais por matéria" style={{ display: "block", width: "100%", height: "auto" }} width={1920} height={1080} />
+                  <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/ematr-web-notas.webp" alt="Tabela de notas bimestrais por matéria" style={{ display: "block", width: "100%", height: "auto" }} width={1920} height={1080} />
                 </div>
                 <figcaption style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "14px", color: "#5d5d63" }}>
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4030ff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -982,7 +982,7 @@ export function EmatrBody() {
             </div>
           </div>
           <div style={{ borderRadius: "clamp(16px,2vw,24px)", overflow: "hidden", border: "1px solid #e1e1e6", background: "#fff" }}>
-            <Image src="/assets/ematr-solicitacao.webp" alt="Tela de solicitação completa: status, dados do aluno e escolas pretendidas" style={{ display: "block", width: "100%", height: "auto" }} width={1345} height={762} />
+            <Image sizes="(max-width: 767px) 100vw, 1200px" src="/assets/ematr-solicitacao.webp" alt="Tela de solicitação completa: status, dados do aluno e escolas pretendidas" style={{ display: "block", width: "100%", height: "auto" }} width={1345} height={762} />
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(100%,280px),1fr))", gap: "12px" }}>
             <div style={{ padding: "clamp(20px,2.4vw,28px)", borderRadius: "20px", border: "1px solid #e6e6eb", display: "flex", gap: "16px", alignItems: "flex-start" }}>
