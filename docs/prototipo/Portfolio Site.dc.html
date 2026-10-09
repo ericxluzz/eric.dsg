@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preload" as="image" href="assets/eric2-cutout.webp" fetchpriority="high">
+<link rel="stylesheet" href="_ds/industry-75091abe-892d-4a93-941a-664b27126777/styles.css">
+<script src="_ds/industry-75091abe-892d-4a93-941a-664b27126777/_ds_bundle.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Sora:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap">
+<script src="./image-slot.js"></script>
+<script src="./mascote.js"></script>
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#fafafc;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+a:hover{color:#4030ff}
+a:focus-visible,button:focus-visible{outline:2px solid #4030ff;outline-offset:3px}
+@keyframes elPulse{0%{box-shadow:0 0 0 0 rgba(64,48,255,.55)}70%{box-shadow:0 0 0 9px rgba(64,48,255,0)}100%{box-shadow:0 0 0 0 rgba(64,48,255,0)}}
+@keyframes elBlink{0%,100%{opacity:1}50%{opacity:.35}}
+@keyframes heroPhotoIn{from{opacity:0;transform:translateY(36px) scale(.985);filter:blur(8px) drop-shadow(0 20px 40px rgba(7,22,92,0))}to{opacity:1;transform:none;filter:blur(0) drop-shadow(0 20px 40px rgba(7,22,92,.25))}}
+@media (prefers-reduced-motion:reduce){img[alt="Eric Luz"]{animation:none!important}}
+</style>
+<script src="./reveal.js"></script>
+<script src="./mobile.js"></script>
+</helmet>
+<div style="font-family:{{ fontFamily }};color:#101014;background:#fafafc">
+
+  <header style="position:fixed;z-index:50;top:16px;left:0;right:0;display:flex;justify-content:center;padding:0 16px;pointer-events:none">
+    <div style="pointer-events:auto;width:100%;max-width:1280px;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:10px 12px 10px 20px;border-radius:999px;background:rgba(255,255,255,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(16,16,20,.08)">
+      <a href="#inicio" style="display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px;letter-spacing:-.01em;color:#101014">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4030ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15.707 21.293a1 1 0 0 1-1.414 0l-1.586-1.586a1 1 0 0 1 0-1.414l5.586-5.586a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 1 0 1.414z"></path><path d="m18 13-1.375-6.874a1 1 0 0 0-.746-.776L3.235 2.028a1 1 0 0 0-1.207 1.207L5.35 15.879a1 1 0 0 0 .776.746L13 18"></path><path d="m2.3 2.3 7.286 7.286"></path><circle cx="11" cy="11" r="2"></circle></svg>
+        Eric Luz
+      </a>
+      <nav style="display:flex;align-items:center;gap:4px;flex-wrap:wrap;font-size:15px;font-weight:500">
+        <a href="#inicio" style="padding:10px 14px;border-radius:999px" style-hover="background:#eceaff;color:#2a1fb3">Início</a>
+        <a href="Sobre.dc.html" style="padding:10px 14px;border-radius:999px" style-hover="background:#eceaff;color:#2a1fb3">Sobre</a>
+        <a href="#projetos" style="padding:10px 14px;border-radius:999px" style-hover="background:#eceaff;color:#2a1fb3">Projetos</a>
+        <a href="Exploracoes.dc.html" style="padding:10px 14px;border-radius:999px" style-hover="background:#eceaff;color:#2a1fb3">Explorações</a>
+        <a href="#contato" style="padding:10px 18px;border-radius:999px;background:#101014;color:#fff" style-hover="background:#4030ff;color:#fff">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="inicio" data-screen-label="Hero" style="position:relative;display:flex;flex-wrap:wrap;min-height:100vh;overflow:hidden;background:#fafafc">
+
+    <div style="position:relative;flex:3 1 600px;display:flex;flex-wrap:wrap;align-items:flex-end;padding:clamp(88px,10vh,120px) 0 0 clamp(20px,5vw,80px);box-sizing:border-box;background:linear-gradient(135deg,#07165c 0%,#1239ff 38%,#4030ff 62%,#6929ff 82%,#8129d9 100%);color:#fff">
+      <div style="position:absolute;inset:0;overflow:hidden;pointer-events:none">
+        <div style="position:absolute;inset:0;background:radial-gradient(ellipse 42% 55% at 88% 55%,rgba(150,160,255,.55),transparent 70%)"></div>
+        <sc-if value="{{ showShapes }}" hint-placeholder-val="{{ true }}">
+          <div style="position:absolute;width:78%;aspect-ratio:1;border-radius:50%;right:-22%;top:8%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14)"></div>
+          <div style="position:absolute;width:52%;aspect-ratio:1;border-radius:50%;right:-6%;top:24%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12)"></div>
+          <div style="position:absolute;width:120%;aspect-ratio:1;border-radius:50%;left:-60%;bottom:-78%;border:1px solid rgba(255,255,255,.12);background:rgba(7,22,92,.25)"></div>
+        </sc-if>
+      </div>
+
+      <div style="position:relative;z-index:4;flex:1 1 340px;max-width:460px;align-self:center;display:flex;flex-direction:column;align-items:flex-start;gap:28px;padding:24px clamp(0px,2vw,24px) 64px 0;box-sizing:border-box">
+        <span style="display:inline-flex;align-items:center;padding:8px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.1);font-size:14px;font-weight:500">Product Designer</span>
+        <sc-if value="{{ headlineConcept }}" hint-placeholder-val="{{ true }}">
+          <h1 style="margin:0;font-family:inherit;font-weight:500;font-size:clamp(44px,4.8vw,84px);line-height:.95;letter-spacing:-.04em;text-wrap:balance">Produtos complexos de ponta a ponta</h1>
+        </sc-if>
+        <sc-if value="{{ headlineAlt }}" hint-placeholder-val="{{ false }}">
+          <h1 style="margin:0;font-family:inherit;font-weight:500;font-size:clamp(42px,4.4vw,78px);line-height:.95;letter-spacing:-.04em;text-wrap:balance">Design onde negócio e usuário se encontram</h1>
+        </sc-if>
+        <sc-if value="{{ headlineName }}" hint-placeholder-val="{{ false }}">
+          <h1 style="margin:0;font-family:inherit;font-weight:500;font-size:clamp(56px,7vw,124px);line-height:.88;letter-spacing:-.04em">Eric<br>Luz</h1>
+        </sc-if>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a href="#projetos" style="display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:999px;background:#fff;color:#101014;font-weight:600;font-size:16px;white-space:nowrap" style-hover="background:#eceaff;color:#101014">
+            Ver meus trabalhos
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M7 7h10v10"></path></svg>
+          </a>
+          <a href="cv-eric-luz.pdf" download="" style="display:inline-flex;align-items:center;gap:8px;padding:15px 24px;border-radius:999px;border:1px solid rgba(255,255,255,.5);color:#fff;font-weight:500;font-size:16px;white-space:nowrap" style-hover="background:rgba(255,255,255,.12);color:#fff">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"></path></svg>
+            Baixar CV
+          </a>
+        </div>
+        <div style="display:flex;gap:10px">
+          <a href="https://www.linkedin.com/in/ericxluzzz-dsg/" aria-label="LinkedIn" style="width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.5);color:#fff;display:grid;place-items:center" style-hover="background:rgba(255,255,255,.14);color:#fff">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="mailto:ericxluzz.dsg@gmail.com" aria-label="E-mail" style="width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.5);color:#fff;display:grid;place-items:center" style-hover="background:rgba(255,255,255,.14);color:#fff">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg>
+          </a>
+          
+        </div>
+      </div>
+
+      <div style="position:relative;z-index:3;flex:1 1 380px;min-width:0;display:flex;justify-content:center;align-self:flex-end;margin-right:calc(-1 * clamp(0px,9vw,160px))">
+        <img src="assets/eric2-cutout.webp" fetchpriority="high" decoding="async" alt="Eric Luz" style="display:block;height:clamp(520px,max(94vh,46vw),1080px);width:auto;max-width:none;margin-top:-40px;filter:drop-shadow(0 20px 40px rgba(7,22,92,.25));animation:heroPhotoIn 1.3s cubic-bezier(.2,.7,.2,1) .15s both">
+      </div>
+    </div>
+
+    <div style="position:relative;z-index:1;flex:2 1 380px;display:flex;flex-direction:column;justify-content:center;gap:24px;padding:120px clamp(20px,4vw,72px) 64px clamp(20px,8vw,150px);box-sizing:border-box">
+      <span style="display:inline-flex;align-self:flex-start;align-items:center;gap:10px;padding:8px 14px;border-radius:999px;background:#eceaff;color:#2a1fb3;font-size:14px;font-weight:600">{{ dot }}Disponível para projetos</span>
+      <p style="margin:0;font-weight:600;font-size:clamp(26px,2.4vw,42px);line-height:1.1;letter-spacing:-.03em;text-wrap:pretty;max-width:18ch">Atuo onde design, <span style="background:linear-gradient(90deg,#1239ff,#6929ff);-webkit-background-clip:text;background-clip:text;color:transparent">regra de negócio</span> e engenharia se encontram</p>
+      <p style="margin:0;font-size:clamp(16px,1.15vw,19px);line-height:1.55;color:#4a4a52;text-wrap:pretty;max-width:42ch">Do discovery à entrega: comparo alternativas, decido com dados e acompanho a implementação.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px">
+        <span style="display:inline-flex;align-items:center;gap:7px;padding:7px 13px 7px 11px;border-radius:999px;border:1px solid #d4d4d7;font-size:14px;font-weight:500;color:#2b2b2d"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#4030ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 22h18M6 18v-7M10 18v-7M14 18v-7M18 18v-7M12 2l8 5H4z"></path></svg>GovTech</span>
+        <span style="display:inline-flex;align-items:center;gap:7px;padding:7px 13px 7px 11px;border-radius:999px;border:1px solid #d4d4d7;font-size:14px;font-weight:500;color:#2b2b2d"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#4030ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"></rect><path d="M2 10h20M6 15h4"></path></svg>Fintech</span>
+        <span style="display:inline-flex;align-items:center;gap:7px;padding:7px 13px 7px 11px;border-radius:999px;border:1px solid #d4d4d7;font-size:14px;font-weight:500;color:#2b2b2d"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#4030ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9z"></path></svg>SaaS</span>
+        <span style="display:inline-flex;align-items:center;gap:7px;padding:7px 13px 7px 11px;border-radius:999px;border:1px solid #d4d4d7;font-size:14px;font-weight:500;color:#2b2b2d"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#4030ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><circle cx="17.5" cy="17.5" r="3.5"></circle></svg>Design Systems</span>
+      </div>
+      <sc-if value="{{ impactOn }}" hint-placeholder-val="{{ true }}">
+        <div style="margin-top:16px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);border-top:1px solid #101014;max-width:520px">
+          <div style="grid-column:1 / -1;display:flex;align-items:flex-end;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid #e1e1e6">
+            <div style="display:flex;flex-direction:column;gap:4px;min-width:0">
+              <span style="font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#6929ff">SIABES · GovTech</span>
+              <span style="font-size:15px;color:#4a4a52">cidadãos atendidos</span>
+            </div>
+            <span style="white-space:nowrap;flex-shrink:0;font-weight:600;font-size:clamp(36px,3.4vw,56px);letter-spacing:-.04em;line-height:.9;font-variant-numeric:tabular-nums">+{{ n1 }} mil</span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:6px;padding:16px 16px 0 0;border-right:1px solid #e1e1e6">
+            <span style="white-space:nowrap;font-weight:600;font-size:clamp(24px,2vw,34px);letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums">+{{ n2 }} mil</span>
+            <span style="font-size:14px;color:#4a4a52;line-height:1.35">acessos simultâneos · e-Matrículas</span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:6px;padding:16px 0 0 16px">
+            <span style="white-space:nowrap;font-weight:600;font-size:clamp(24px,2vw,34px);letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums">+{{ n3 }} anos</span>
+            <span style="font-size:14px;color:#4a4a52;line-height:1.35">de experiência em produto</span>
+          </div>
+        </div>
+      </sc-if>
+    </div>
+  </section>
+
+  <section id="sobre" data-screen-label="Sobre" style="background:#fafafc;padding:clamp(72px,8vw,120px) clamp(20px,5vw,80px) clamp(48px,5vw,72px)">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:clamp(28px,4vw,72px);align-items:stretch">
+      <div style="position:relative;min-width:0;min-height:340px;border-radius:28px;overflow:hidden">
+        <img src="assets/sobre-time.webp" loading="lazy" decoding="async" alt="Eric em reunião de produto" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
+      </div>
+      <div style="display:flex;flex-direction:column;gap:20px;min-width:0;justify-content:center">
+        <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:12px">
+        <span style="display:inline-flex;align-items:center;gap:10px;align-self:flex-start;padding:5px 15px 5px 5px;border-radius:999px;background:#eceaff;color:#2a1fb3;font-size:15px;font-weight:600;letter-spacing:-.005em;line-height:1"><span style="min-width:26px;height:26px;padding:0 7px;box-sizing:border-box;border-radius:999px;background:#4030ff;color:#fff;display:grid;place-items:center;font-size:12px;font-weight:600;font-variant-numeric:tabular-nums">01</span>Sobre mim</span>
+          <div style="margin:-120px 0 0"><x-import component-from-global-scope="eric-mascote" from="./mascote.js" mode="hi" size="3" hint-size="144px,146px"></x-import></div>
+        </div>
+        <h2 style="margin:0;font-family:inherit;font-weight:500;font-size:clamp(36px,3.6vw,60px);line-height:.98;letter-spacing:-.045em;text-wrap:balance">Meu trabalho é dar <span style="background:linear-gradient(90deg,#1239ff,#6929ff);-webkit-background-clip:text;background-clip:text;color:transparent">clareza</span> ao que é complexo</h2>
+        <p style="margin:0;max-width:52ch;font-size:clamp(17px,1.3vw,20px);line-height:1.6;color:#3a3a40;text-wrap:pretty">Sou Product Designer há mais de 8 anos. Organizo o que está confuso, entendo o que o negócio precisa e o que o usuário espera, e tomo decisões com critério.</p>
+        <div style="display:flex;flex-direction:column;margin-top:8px;border-bottom:1px solid rgba(16,16,20,.12)"><div style="display:flex;gap:16px;align-items:flex-start;padding:18px 0;border-top:1px solid rgba(16,16,20,.12)"><span style="width:44px;height:44px;border-radius:12px;flex-shrink:0;background:#eceaff;color:#4030ff;display:grid;place-items:center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg></span><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-size:18px;font-weight:600;letter-spacing:-.01em">Do problema ao handoff, e depois dele</span><span style="font-size:15px;line-height:1.55;color:#3a3a40;text-wrap:pretty">Atuo desde o entendimento do problema até a entrega, e sigo junto na implementação.</span></div></div><div style="display:flex;gap:16px;align-items:flex-start;padding:18px 0;border-top:1px solid rgba(16,16,20,.12)"><span style="width:44px;height:44px;border-radius:12px;flex-shrink:0;background:#eceaff;color:#4030ff;display:grid;place-items:center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-size:18px;font-weight:600;letter-spacing:-.01em">Produto, negócio e tecnologia desde cedo</span><span style="font-size:15px;line-height:1.55;color:#3a3a40;text-wrap:pretty">Envolvo todo mundo no começo, para que ninguém seja pego de surpresa no meio do caminho.</span></div></div><div style="display:flex;gap:16px;align-items:flex-start;padding:18px 0;border-top:1px solid rgba(16,16,20,.12)"><span style="width:44px;height:44px;border-radius:12px;flex-shrink:0;background:#eceaff;color:#4030ff;display:grid;place-items:center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"></path></svg></span><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-size:18px;font-weight:600;letter-spacing:-.01em">IA e código no processo</span><span style="font-size:15px;line-height:1.55;color:#3a3a40;text-wrap:pretty">Valido mais rápido, aproximo a interface do código e reduzo o ruído entre o desenhado e o que vai para produção.</span></div></div></div>
+      <a href="Sobre.dc.html" style="display:inline-flex;align-items:center;gap:10px;align-self:flex-start;padding:14px 22px;border-radius:999px;background:#101014;color:#fff;font-size:15px;font-weight:600" style-hover="background:#4030ff;color:#fff">Ver mais sobre mim<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos" data-screen-label="Projetos" style="background:#fafafc;padding:clamp(48px,6vw,96px) clamp(20px,5vw,80px) clamp(80px,10vw,150px)">
+    <div style="display:flex;flex-direction:column;gap:clamp(40px,4.5vw,64px)">
+      <div style="display:flex;flex-direction:column;gap:20px;max-width:760px">
+        <div style="display:flex;flex-direction:column;gap:20px;min-width:0">
+          <span style="display:inline-flex;align-items:center;gap:10px;align-self:flex-start;padding:5px 15px 5px 5px;border-radius:999px;background:#eceaff;color:#2a1fb3;font-size:15px;font-weight:600;letter-spacing:-.005em;line-height:1"><span style="min-width:26px;height:26px;padding:0 7px;box-sizing:border-box;border-radius:999px;background:#4030ff;color:#fff;display:grid;place-items:center;font-size:12px;font-weight:600;font-variant-numeric:tabular-nums">02</span>Projetos</span>
+          <h2 style="margin:0;font-family:inherit;font-weight:500;font-size:clamp(40px,4.8vw,76px);line-height:1;letter-spacing:-.045em;text-wrap:balance">Casos <span style="background:linear-gradient(90deg,#1239ff,#6929ff);-webkit-background-clip:text;background-clip:text;color:transparent">selecionados</span></h2>
+        </div>
+        <p style="margin:0;max-width:56ch;font-size:clamp(16px,1.2vw,19px);line-height:1.6;color:#3a3a40;text-wrap:pretty">Produtos de alta complexidade, do problema à implementação. Cada case mostra o contexto, a decisão e o resultado.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));column-gap:clamp(16px,1.6vw,28px);row-gap:0">
+        <a href="Case SIAGRES.dc.html" onClick="{{ openSiagres }}" style="cursor:pointer;min-width:0;display:grid;grid-row:span 4;grid-template-rows:subgrid;row-gap:18px;align-content:start;background:#e3f2e7;border-radius:32px;padding:clamp(12px,1.2vw,16px) clamp(12px,1.2vw,16px) clamp(20px,2vw,28px);margin-bottom:clamp(16px,1.6vw,28px);color:#101014;transition:background .25s" style-hover="background:#d4ebdb;color:#101014">
+          <div style="position:relative;aspect-ratio:4/3;border-radius:22px;overflow:hidden;background:linear-gradient(135deg,#0a4a24 0%,#0b6b32 55%,#2f9a55 100%)">
+            <img src="assets/siag-detalhe.webp" loading="lazy" decoding="async" alt="Detalhamento de MTR no SIAGRES" style="position:absolute;left:10%;top:16%;width:110%;height:auto;max-width:none;display:block;border-radius:10px 0 0 0;box-shadow:0 20px 40px rgba(4,30,14,.3)">
+          </div>
+          <h3 style="margin:0 clamp(6px,1vw,14px);font-family:inherit;font-weight:500;font-size:clamp(21px,1.6vw,26px);line-height:1.15;letter-spacing:-.025em;text-wrap:balance">SIAGRES: uma operação regulada transformada em experiência digital</h3>
+          <p style="margin:0;padding:0 clamp(6px,1vw,14px);font-size:15px;line-height:1.55;color:#3a3a40;text-wrap:pretty">Estudei um domínio que eu não conhecia, das normas ao trabalho em campo, para estruturar a emissão e o acompanhamento de MTRs entre gerador, transportador e destinador.</p>
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:18px;border-top:1px solid rgba(16,16,20,.14);margin:0 clamp(6px,1vw,14px);align-self:end">
+            <span style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-weight:600;font-size:clamp(22px,1.7vw,28px);letter-spacing:-.03em;line-height:1">Lançado</span><span style="font-size:13px;color:#5d5d63">web e mobile · prefeitura</span></span>
+            <span style="width:44px;height:44px;border-radius:50%;background:#101014;color:#fff;display:grid;place-items:center;flex-shrink:0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"></path></svg></span>
+          </div>
+        </a>
+        <a href="Case e-Matriculas.dc.html" onClick="{{ openEmatr }}" style="cursor:pointer;min-width:0;display:grid;grid-row:span 4;grid-template-rows:subgrid;row-gap:18px;align-content:start;background:#dcf3f0;border-radius:32px;padding:clamp(12px,1.2vw,16px) clamp(12px,1.2vw,16px) clamp(20px,2vw,28px);margin-bottom:clamp(16px,1.6vw,28px);color:#101014;transition:background .25s" style-hover="background:#cdeeea;color:#101014">
+          <div style="position:relative;aspect-ratio:4/3;border-radius:22px;overflow:hidden;background:linear-gradient(135deg,#0e7c86 0%,#14a3a8 55%,#5fd0c4 100%)">
+            <img src="assets/case-ematriculas-phones.webp" loading="lazy" decoding="async" alt="Telas do app e-Matrículas em dois iPhones" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;display:block;transform:scale(1.45);transform-origin:center 4%">
+          </div>
+          <h3 style="margin:0 clamp(6px,1vw,14px);font-family:inherit;font-weight:500;font-size:clamp(21px,1.6vw,26px);line-height:1.15;letter-spacing:-.025em;text-wrap:balance">e-Matrículas: inscrição escolar sem filas</h3>
+          <p style="margin:0;padding:0 clamp(6px,1vw,14px);font-size:15px;line-height:1.55;color:#3a3a40;text-wrap:pretty">Liderei a digitalização completa da matrícula, com fluxos de inscrição, alocação e gestão escolar para responsáveis e administração central.</p>
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:18px;border-top:1px solid rgba(16,16,20,.14);margin:0 clamp(6px,1vw,14px);align-self:end">
+            <span style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-weight:600;font-size:clamp(22px,1.7vw,28px);letter-spacing:-.03em;line-height:1">+50 mil</span><span style="font-size:13px;color:#5d5d63">acessos simultâneos no pico</span></span>
+            <span style="width:44px;height:44px;border-radius:50%;background:#101014;color:#fff;display:grid;place-items:center;flex-shrink:0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"></path></svg></span>
+          </div>
+        </a>
+        <a href="Case Eventure.dc.html" onClick="{{ openEventure }}" style="cursor:pointer;min-width:0;display:grid;grid-row:span 4;grid-template-rows:subgrid;row-gap:18px;align-content:start;background:#ece6ff;border-radius:32px;padding:clamp(12px,1.2vw,16px) clamp(12px,1.2vw,16px) clamp(20px,2vw,28px);margin-bottom:clamp(16px,1.6vw,28px);color:#101014;transition:background .25s" style-hover="background:#e2daff;color:#101014">
+          <div style="position:relative;aspect-ratio:4/3;border-radius:22px;overflow:hidden;background:linear-gradient(135deg,#3a12b8 0%,#5b21e6 55%,#8b5cf6 100%)">
+            <img src="assets/case-eventure.webp" loading="lazy" decoding="async" alt="Telas do app Eventure em três iPhones: ingressos, evento e QR code" style="position:absolute;left:50%;top:16%;transform:translateX(-50%);width:100%;max-width:none;height:auto;display:block">
+          </div>
+          <h3 style="margin:0 clamp(6px,1vw,14px);font-family:inherit;font-weight:500;font-size:clamp(21px,1.6vw,26px);line-height:1.15;letter-spacing:-.025em;text-wrap:balance">Eventure: a agenda cultural da cidade em um app</h3>
+          <p style="margin:0;padding:0 clamp(6px,1vw,14px);font-size:15px;line-height:1.55;color:#3a3a40;text-wrap:pretty">Gestão e divulgação de eventos locais com foco em comunidade. Você descobre onde tem evento e quem vai, compra o ingresso e acompanha tudo pelo app.</p>
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:18px;border-top:1px solid rgba(16,16,20,.14);margin:0 clamp(6px,1vw,14px);align-self:end">
+            <span style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-weight:600;font-size:clamp(22px,1.7vw,28px);letter-spacing:-.03em;line-height:1">+500</span><span style="font-size:13px;color:#5d5d63">eventos locais publicados</span></span>
+            <span style="width:44px;height:44px;border-radius:50%;background:#101014;color:#fff;display:grid;place-items:center;flex-shrink:0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"></path></svg></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" data-screen-label="Contato" style="background:#4030ff;color:#fff;padding:clamp(80px,10vw,140px) clamp(20px,5vw,80px) 32px">
+    <div style="display:flex;flex-direction:column;gap:32px">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:32px clamp(32px,6vw,96px);align-items:center">
+        <div style="display:flex;flex-direction:column;gap:20px;min-width:0">
+          <span style="display:inline-flex;align-items:center;gap:10px;align-self:flex-start;padding:5px 15px 5px 5px;border-radius:999px;background:rgba(255,255,255,.16);color:#fff;font-size:15px;font-weight:600;letter-spacing:-.005em;line-height:1"><span style="min-width:26px;height:26px;padding:0 7px;box-sizing:border-box;border-radius:999px;background:#fff;color:#4030ff;display:grid;place-items:center;font-size:12px;font-weight:600;font-variant-numeric:tabular-nums">03</span>Contato</span>
+          <h2 style="margin:0;font-family:inherit;font-weight:500;font-size:clamp(40px,5.2vw,84px);line-height:.95;letter-spacing:-.05em;text-wrap:balance">Tem um produto complexo pela frente?</h2>
+          <p style="margin:0;max-width:440px;font-size:clamp(16px,1.3vw,18px);line-height:1.6;color:#e4e1ff;text-wrap:pretty">Me conta o desafio. Respondo por WhatsApp, e-mail ou LinkedIn.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;border-bottom:1px solid rgba(255,255,255,.28);min-width:0">
+          <a href="https://wa.me/5595984140592" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:16px;padding:clamp(16px,2vw,22px) clamp(4px,1vw,12px);border-top:1px solid rgba(255,255,255,.28);color:#fff" style-hover="background:rgba(255,255,255,.1);color:#fff">
+            <span style="width:44px;height:44px;border-radius:12px;background:#fff;color:#4030ff;display:grid;place-items:center;flex-shrink:0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"></path></svg></span>
+            <span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:2px">
+              <span style="font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#d4cfff">WhatsApp</span>
+              <span style="font-size:clamp(16px,1.5vw,20px);font-weight:500;letter-spacing:-.01em;overflow-wrap:anywhere">(95) 98414-0592</span>
+            </span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M7 17 17 7M7 7h10v10"></path></svg>
+          </a>
+          <a href="mailto:ericxluzz.dsg@gmail.com" style="display:flex;align-items:center;gap:16px;padding:clamp(16px,2vw,22px) clamp(4px,1vw,12px);border-top:1px solid rgba(255,255,255,.28);color:#fff" style-hover="background:rgba(255,255,255,.1);color:#fff">
+            <span style="width:44px;height:44px;border-radius:12px;background:#fff;color:#4030ff;display:grid;place-items:center;flex-shrink:0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-10 5L2 7"></path></svg></span>
+            <span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:2px">
+              <span style="font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#d4cfff">E-mail</span>
+              <span style="font-size:clamp(16px,1.5vw,20px);font-weight:500;letter-spacing:-.01em;overflow-wrap:anywhere">ericxluzz.dsg@gmail.com</span>
+            </span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M7 17 17 7M7 7h10v10"></path></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/ericxluzzz-dsg/" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:16px;padding:clamp(16px,2vw,22px) clamp(4px,1vw,12px);border-top:1px solid rgba(255,255,255,.28);color:#fff" style-hover="background:rgba(255,255,255,.1);color:#fff">
+            <span style="width:44px;height:44px;border-radius:12px;background:#fff;color:#4030ff;display:grid;place-items:center;flex-shrink:0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"></path><circle cx="4" cy="4" r="2"></circle></svg></span>
+            <span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:2px">
+              <span style="font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#d4cfff">LinkedIn</span>
+              <span style="font-size:clamp(16px,1.5vw,20px);font-weight:500;letter-spacing:-.01em;overflow-wrap:anywhere">in/ericxluzzz-dsg</span>
+            </span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M7 17 17 7M7 7h10v10"></path></svg>
+          </a>
+          <a href="cv-eric-luz.pdf" download="" style="display:flex;align-items:center;gap:16px;padding:clamp(16px,2vw,22px) clamp(4px,1vw,12px);border-top:1px solid rgba(255,255,255,.28);color:#fff" style-hover="background:rgba(255,255,255,.1);color:#fff">
+            <span style="width:44px;height:44px;border-radius:12px;background:#fff;color:#4030ff;display:grid;place-items:center;flex-shrink:0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><path d="M14 2v6h6M16 13H8M16 17H8"></path></svg></span>
+            <span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:2px">
+              <span style="font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#d4cfff">Currículo</span>
+              <span style="font-size:clamp(16px,1.5vw,20px);font-weight:500;letter-spacing:-.01em;overflow-wrap:anywhere">Baixar CV em PDF</span>
+            </span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M12 5v14M5 12l7 7 7-7"></path></svg>
+          </a>
+        </div>
+      </div>
+      <div style="margin:0 0 -32px"><x-import component-from-global-scope="eric-mascote" from="./mascote.js" mode="walk" size="3" hint-size="100%,102px"></x-import></div>
+      <footer style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;padding-top:24px;border-top:1px solid rgba(255,255,255,.28);font-size:14px;color:#e4e1ff">
+        <span>© 2026 Eric Luz · Product Designer</span>
+        <a href="#inicio" style="display:inline-flex;align-items:center;gap:6px;color:#fff">Voltar ao topo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 19V5M5 12l7-7 7 7"></path></svg></a>
+      </footer>
+      <p style="margin:20px 0 0;display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;line-height:1.6;color:#e4e1ff;text-wrap:pretty">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+        <span>Desenhado e codado por mim, de ponta a ponta, num processo de Design Engineering: design, interface e animações em Next.js, TypeScript e Tailwind CSS, publicado na Vercel.</span>
+      </p>
+    </div>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;font&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Space Grotesk&quot;,&quot;Instrument Sans&quot;,&quot;Manrope&quot;,&quot;Sora&quot;,&quot;DM Sans&quot;,&quot;Barlow&quot;],&quot;default&quot;:&quot;Space Grotesk&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;headline&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Ponta a ponta&quot;,&quot;Negócio e usuário&quot;,&quot;Nome&quot;],&quot;default&quot;:&quot;Ponta a ponta&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;showShapes&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;},&quot;showImpact&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  state = { t: 0 };
+  componentDidMount() {
+    const start = performance.now() + 300, dur = 1800;
+    const tick = (now) => {
+      const p = Math.min(1, Math.max(0, (now - start) / dur));
+      this.setState({ t: 1 - Math.pow(1 - p, 3) });
+      if (p < 1) this.raf = requestAnimationFrame(tick);
+    };
+    this.raf = requestAnimationFrame(tick);
+  }
+  componentWillUnmount() { cancelAnimationFrame(this.raf); }
+  renderVals() {
+    const h = this.props.headline ?? "Ponta a ponta";
+    const fonts = {
+      "Space Grotesk": '"Space Grotesk", system-ui, sans-serif',
+      "Instrument Sans": '"Instrument Sans", system-ui, sans-serif',
+      "Manrope": '"Manrope", system-ui, sans-serif',
+      "Sora": '"Sora", system-ui, sans-serif',
+      "DM Sans": '"DM Sans", system-ui, sans-serif',
+      "Barlow": 'var(--font-body)',
+    };
+    const t = this.state.t;
+    return {
+      fontFamily: fonts[this.props.font ?? "Space Grotesk"] || fonts["Space Grotesk"],
+      showShapes: this.props.showShapes ?? true,
+      impactOn: this.props.showImpact ?? true,
+      headlineConcept: h === "Ponta a ponta",
+      headlineAlt: h === "Negócio e usuário",
+      headlineName: h === "Nome",
+      openEventure: (e) => { e.preventDefault(); window.location.href = "Case Eventure.dc.html"; },
+      openSiagres: (e) => { e.preventDefault(); window.location.href = "Case SIAGRES.dc.html"; },
+      openEmatr: (e) => { e.preventDefault(); window.location.href = "Case e-Matriculas.dc.html"; },
+      n1: Math.round(150 * t),
+      n2: Math.round(50 * t),
+      n3: Math.round(8 * t),
+      dot: React.createElement('span', { style: { width: 8, height: 8, borderRadius: '50%', background: '#4030ff', display: 'block', animation: 'elPulse 1.8s ease-out infinite, elBlink 1.8s ease-in-out infinite' } }),
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#fafafc;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+a:hover{color:#4030ff}
+a:focus-visible,button:focus-visible{outline:2px solid #4030ff;outline-offset:3px}
+</style>
+<script src="./image-slot.js"></script>
+<script src="./mobile.js"></script>
+</helmet>
+<div style="font-family:'Space Grotesk',system-ui,sans-serif;color:#101014;background:#fafafc;min-height:100vh;display:flex;flex-direction:column">
+
+  <header style="position:fixed;z-index:50;top:16px;left:0;right:0;display:flex;justify-content:center;padding:0 16px;pointer-events:none">
+    <div style="pointer-events:auto;width:100%;max-width:1280px;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:10px 12px 10px 20px;border-radius:999px;background:rgba(255,255,255,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(16,16,20,.08)">
+      <a href="Portfolio Site.dc.html" style="display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px;letter-spacing:-.01em;color:#101014">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4030ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15.707 21.293a1 1 0 0 1-1.414 0l-1.586-1.586a1 1 0 0 1 0-1.414l5.586-5.586a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 1 0 1.414z"></path><path d="m18 13-1.375-6.874a1 1 0 0 0-.746-.776L3.235 2.028a1 1 0 0 0-1.207 1.207L5.35 15.879a1 1 0 0 0 .776.746L13 18"></path><path d="m2.3 2.3 7.286 7.286"></path><circle cx="11" cy="11" r="2"></circle></svg>
+        Eric Luz
+      </a>
+      <nav style="display:flex;align-items:center;gap:4px;flex-wrap:wrap;font-size:15px;font-weight:500">
+        <a href="Portfolio Site.dc.html" style="padding:10px 14px;border-radius:999px" style-hover="background:#eceaff;color:#2a1fb3">Início</a>
+        <a href="Sobre.dc.html" style="padding:10px 14px;border-radius:999px" style-hover="background:#eceaff;color:#2a1fb3">Sobre</a>
+        <a href="Portfolio Site.dc.html#projetos" style="padding:10px 14px;border-radius:999px" style-hover="background:#eceaff;color:#2a1fb3">Projetos</a>
+        <a href="Exploracoes.dc.html" aria-current="page" style="padding:10px 14px;border-radius:999px;background:#eceaff;color:#2a1fb3">Explorações</a>
+        <a href="Portfolio Site.dc.html#contato" style="padding:10px 18px;border-radius:999px;background:#101014;color:#fff" style-hover="background:#4030ff;color:#fff">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <section data-screen-label="Explorações · Abertura" style="padding:clamp(120px,12vw,160px) clamp(20px,5vw,80px) clamp(28px,3vw,40px)">
+    <div style="max-width:1280px;margin:0 auto;display:flex;flex-direction:column;gap:18px">
+      <span style="display:inline-flex;align-items:center;gap:10px;align-self:flex-start;padding:5px 15px 5px 5px;border-radius:999px;background:#eceaff;color:#2a1fb3;font-size:15px;font-weight:600;letter-spacing:-.005em;line-height:1"><span style="width:8px;height:8px;margin:0 4px 0 9px;border-radius:50%;background:#4030ff;display:block"></span>Explorações</span>
+      <h1 style="margin:0;font-family:inherit;font-weight:500;font-size:clamp(40px,4.6vw,72px);line-height:.98;letter-spacing:-.05em">Explorações</h1>
+      <p style="margin:0;max-width:64ch;font-size:clamp(17px,1.4vw,20px);line-height:1.5;color:#3a3a40;text-wrap:pretty">Experiências, processos e experimentações que fazem parte da minha atuação em Product Design e Design Engineering.</p>
+    </div>
+  </section>
+
+  <section data-screen-label="Explorações · Publicações" style="flex:1;padding:0 clamp(20px,5vw,80px) clamp(64px,8vw,110px)">
+    <div style="max-width:1280px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(24px,3vw,36px)">
+      <div style="margin-bottom:calc(-1 * clamp(24px,3vw,36px))"><x-import component-from-global-scope="eric-mascote" from="./mascote.js" mode="walk" size="3" hint-size="100%,102px"></x-import></div>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding:12px 0;border-top:1px solid #101014;border-bottom:1px solid #e1e1e6">
+        <div role="tablist" aria-label="Categorias" style="display:flex;flex-wrap:wrap;gap:6px">
+          <sc-for list="{{ filters }}" as="f" hint-placeholder-count="4">
+            <button type="button" role="tab" aria-selected="{{ f.selected }}" onClick="{{ f.onClick }}" style="all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:999px;font-size:14px;font-weight:500;background:{{ f.bg }};color:{{ f.fg }}">{{ f.label }}<span style="font-size:12px;opacity:.65;font-variant-numeric:tabular-nums">{{ f.count }}</span></button>
+          </sc-for>
+        </div>
+        <span style="font-size:13px;color:#6b6b72">{{ countLabel }}</span>
+      </div>
+
+      <sc-for list="{{ featured }}" as="p" hint-placeholder-count="1">
+        <a href="{{ p.href }}" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(20px,3vw,48px);align-items:center;color:#101014" style-hover="color:#101014">
+          <div style="position:relative;aspect-ratio:16/10;border-radius:24px;overflow:hidden;background:{{ p.bg }}">
+            <sc-if value="{{ p.hasCapa }}" hint-placeholder-val="{{ false }}"><span role="img" aria-label="Capa" style="position:absolute;inset:0;background-image:{{ p.capaCss }};background-size:cover;background-position:center"></span></sc-if><sc-if value="{{ p.noCapa }}" hint-placeholder-val="{{ true }}"><image-slot id="{{ p.slot }}" shape="rect" placeholder="Imagem de destaque" style="position:absolute;inset:0;width:100%;height:100%"></image-slot></sc-if>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:14px;min-width:0">
+            <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:13px"><span style="padding:5px 11px;border-radius:999px;font-weight:600;background:{{ p.bg }};color:{{ p.ink }}">{{ p.cat }}</span><sc-if value="{{ p.exemplo }}" hint-placeholder-val="{{ true }}"><span style="padding:4px 10px;border-radius:999px;border:1px dashed #b9b9c2;color:#5d5d63;font-weight:500">Exemplo</span></sc-if></div>
+            <h2 style="margin:0;font-family:inherit;font-weight:500;font-size:clamp(28px,2.8vw,42px);line-height:1.06;letter-spacing:-.04em;text-wrap:balance">{{ p.titulo }}</h2>
+            <p style="margin:0;max-width:52ch;font-size:16px;line-height:1.6;color:#3a3a40;text-wrap:pretty">{{ p.descricao }}</p>
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:16px;border-top:1px solid #e1e1e6;font-size:14px;color:#5d5d63"><span>{{ p.meta }}</span><span style="display:inline-flex;align-items:center;gap:6px;font-weight:600;color:#101014">Ler<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></span></div>
+          </div>
+        </a>
+      </sc-for>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:clamp(28px,3vw,40px) clamp(16px,2vw,28px)">
+        <sc-for list="{{ rest }}" as="p" hint-placeholder-count="2">
+          <a href="{{ p.href }}" style="display:flex;flex-direction:column;gap:16px;min-width:0;color:#101014" style-hover="color:#101014">
+            <div style="position:relative;aspect-ratio:16/10;border-radius:20px;overflow:hidden;background:{{ p.bg }}">
+              <sc-if value="{{ p.hasCapa }}" hint-placeholder-val="{{ false }}"><span role="img" aria-label="Capa" style="position:absolute;inset:0;background-image:{{ p.capaCss }};background-size:cover;background-position:center"></span></sc-if><sc-if value="{{ p.noCapa }}" hint-placeholder-val="{{ true }}"><image-slot id="{{ p.slot }}" shape="rect" placeholder="Imagem de destaque" style="position:absolute;inset:0;width:100%;height:100%"></image-slot></sc-if>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:10px;padding:0 2px">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:13px"><span style="padding:4px 10px;border-radius:999px;font-weight:600;background:{{ p.bg }};color:{{ p.ink }}">{{ p.cat }}</span><sc-if value="{{ p.exemplo }}" hint-placeholder-val="{{ true }}"><span style="padding:3px 9px;border-radius:999px;border:1px dashed #b9b9c2;color:#5d5d63;font-weight:500">Exemplo</span></sc-if></div>
+              <h3 style="margin:0;font-family:inherit;font-weight:500;font-size:clamp(20px,1.6vw,24px);line-height:1.18;letter-spacing:-.025em;text-wrap:balance">{{ p.titulo }}</h3>
+              <p style="margin:0;font-size:15px;line-height:1.55;color:#3a3a40;text-wrap:pretty">{{ p.descricao }}</p>
+              <span style="font-size:13px;color:#6b6b72">{{ p.meta }}</span>
+            </div>
+          </a>
+        </sc-for>
+      </div>
+
+      <sc-if value="{{ empty }}" hint-placeholder-val="{{ false }}">
+        <p style="margin:0;padding:48px 0;font-size:16px;color:#5d5d63">Nenhuma publicação nesta categoria ainda.</p>
+      </sc-if>
+    </div>
+  </section>
+
+  <footer style="padding:0 clamp(20px,5vw,80px) 32px">
+    <div style="max-width:1280px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;padding-top:24px;border-top:1px solid #dcdce2;font-size:14px;color:#5d5d63">
+      <span>© 2026 Eric Luz · Product Designer</span>
+      <a href="Portfolio Site.dc.html#projetos" style="display:inline-flex;align-items:center;gap:6px">Projetos <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M7 7h10v10"></path></svg></a>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { f: 'todos', posts: null, cats: {} };
+  componentDidMount() {
+    import('./exploracoes-data.js').then(m => this.setState({ posts: m.posts, cats: m.categorias }));
+  }
+  renderVals() {
+    const all = this.state.posts || [];
+    const cats = this.state.cats;
+    const f = this.state.f;
+    const keys = [['todos', 'Todos'], ...Object.keys(cats).map(k => [k, cats[k].label])];
+    const list = all.filter(p => f === 'todos' || p.categoria === f);
+    const map = p => {
+      const c = cats[p.categoria] || {};
+      const txt = JSON.stringify(p.conteudo || []).replace(/"[a-zA-Z]+":/g, ' '); const rt = p.leitura || (Math.max(1, Math.round(((txt.match(/[A-Za-zÀ-ú]{2,}/g) || []).length) / 200)) + ' min');
+      return { ...p, descricao: p.resumo || p.descricao, cat: c.label, bg: c.bg, ink: c.ink, slot: 'exp-capa-' + p.slug, href: 'Exploracao.dc.html?p=' + p.slug, meta: [p.empresa, p.data, rt + ' de leitura'].filter(Boolean).join(' · '), exemplo: !!p.exemplo, hasCapa: !!(p.cardCapa || p.capa), noCapa: !(p.cardCapa || p.capa), capaCss: (p.cardCapa || p.capa) ? 'url("' + (p.cardCapa || p.capa) + '")' : 'none' };
+    };
+    return {
+      filters: keys.map(([k, label]) => ({ label, count: k === 'todos' ? all.length : all.filter(p => p.categoria === k).length, selected: k === f ? 'true' : 'false', bg: k === f ? '#101014' : 'transparent', fg: k === f ? '#fff' : '#101014', onClick: () => this.setState({ f: k }) })),
+      countLabel: list.length + (list.length === 1 ? ' publicação' : ' publicações'),
+      featured: list.slice(0, 1).map(map),
+      rest: list.slice(1).map(map),
+      empty: this.state.posts !== null && list.length === 0
+    };
+  }
+}
+</script>
+</body>
+</html>

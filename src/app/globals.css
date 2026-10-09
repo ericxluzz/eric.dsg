@@ -1,0 +1,141 @@
+/* Sem preflight do Tailwind: os protótipos rodam sobre os defaults do navegador
+   e qualquer reset mudaria margens/box-sizing herdados. Só tema + utilitários. */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@custom-variant mob (@media (max-width: 767px));
+
+@theme {
+  --font-sans: var(--font-space-grotesk), system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --color-ink: #101014;
+  --color-bg: #fafafc;
+  --color-primary: #4030ff;
+  --color-primary-ink: #2a1fb3;
+  --color-primary-tint: #eceaff;
+  --color-violet: #6929ff;
+  --color-blue: #1239ff;
+  --color-text-2: #3a3a40;
+  --color-text-3: #4a4a52;
+  --color-text-4: #5d5d63;
+  --color-text-5: #6b6b72;
+  --color-line: #e1e1e6;
+  --color-line-2: #d4d4d7;
+  --color-on-primary: #e4e1ff;
+  --color-on-primary-2: #d4cfff;
+
+  --color-siagres: #e3f2e7;
+  --color-siagres-hover: #d4ebdb;
+  --color-siagres-ink: #0b5e2a;
+  --color-siagres-deep: #0a3d1f;
+  --color-ematr: #dcf3f0;
+  --color-ematr-hover: #cdeeea;
+  --color-eventure: #ece6ff;
+  --color-eventure-hover: #e2daff;
+
+  --radius-card: 32px;
+  --radius-card-img: 22px;
+  --radius-photo: 28px;
+  --radius-panel: 24px;
+  --radius-tile: 12px;
+
+  --ease-out-soft: cubic-bezier(.2, .7, .2, 1);
+}
+
+@layer base {
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  html:has([data-page="ematr"]) { scroll-padding-top: 96px; }
+  body { margin: 0; background: var(--color-bg); color: var(--color-ink); font-family: var(--font-space-grotesk), system-ui, sans-serif; overflow-x: hidden; }
+  body:has([data-page="ematr"]) { background: #fff; }
+  a { color: inherit; text-decoration: none; }
+  a:hover { color: var(--color-primary); }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 3px; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  }
+}
+
+.skip-link { position: fixed; z-index: 100; left: 16px; top: -60px; padding: 12px 18px; border-radius: 999px; background: var(--color-ink); color: #fff; font: 600 15px/1 var(--font-space-grotesk), system-ui, sans-serif; transition: top .2s; }
+.skip-link:focus { top: 16px; color: #fff; }
+
+/* Gradientes (únicos hex permitidos fora do @theme) */
+@utility bg-hero {
+  background:
+    radial-gradient(ellipse 42% 55% at 88% 55%, rgba(150,160,255,.55), transparent 70%),
+    linear-gradient(135deg, #07165c 0%, #1239ff 38%, #4030ff 62%, #6929ff 82%, #8129d9 100%);
+}
+@utility text-gradient {
+  background: linear-gradient(90deg, #1239ff, #6929ff);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+
+/* Animações (timings em docs/07-animacoes-e-mascote.md) */
+@keyframes elPulse { 0% { box-shadow: 0 0 0 0 rgba(64,48,255,.55); } 70% { box-shadow: 0 0 0 9px rgba(64,48,255,0); } 100% { box-shadow: 0 0 0 0 rgba(64,48,255,0); } }
+@keyframes elBlink { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
+@keyframes heroPhotoIn {
+  from { opacity: 0; transform: translateY(36px) scale(.985); filter: blur(8px) drop-shadow(0 20px 40px rgba(7,22,92,0)); }
+  to   { opacity: 1; transform: none; filter: blur(0) drop-shadow(0 20px 40px rgba(7,22,92,.25)); }
+}
+@keyframes mIn { from { opacity: 0; transform: translateY(-8px) scale(.98); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { img[alt="Eric Luz"] { animation: none !important; } }
+
+/* Hovers dos protótipos (atributo style-hover → classe). Precisam de !important
+   porque o estilo base é inline. */
+.hv-09a1d1:hover{background:#eceaff !important;color:#101014 !important}
+.hv-152437:hover{background:rgba(255,255,255,.1) !important;color:#fff !important}
+.hv-1e91ec:hover{border-color:#c9c4ff !important;color:#101014 !important}
+.hv-35a89f:hover{color:#101014 !important}
+.hv-4945da:hover{border-color:#4030ff !important;color:#101014 !important}
+.hv-50c2b0:hover{border-color:#101014 !important}
+.hv-5110b7:hover{background:#cdeeea !important;color:#101014 !important}
+.hv-563089:hover{background:#d4ebdb !important;color:#101014 !important}
+.hv-5830a2:hover{background:#e2daff !important;color:#101014 !important}
+.hv-5abf55:hover{background:rgba(255,255,255,.14) !important;color:#fff !important}
+.hv-5de9a7:hover{background:#4030ff !important;color:#fff !important}
+.hv-84f2c9:hover{background:#dcd8ff !important;color:#101014 !important}
+.hv-8f4fb4:hover{border-left-color:#4030ff !important;color:#101014 !important}
+.hv-a79dd4:hover{background:rgba(255,255,255,.12) !important;color:#fff !important}
+.hv-baaf7f:hover{border-color:#4030ff !important;color:#4030ff !important}
+.hv-ccfef3:hover{background:#eceaff !important;color:#2a1fb3 !important}
+
+/* Menu mobile (substitui mobile.js) */
+.m-menu-btn { display: none; align-items: center; gap: 8px; height: 44px; padding: 0 18px; border: 0; border-radius: 999px; background: #101014; color: #fff; font: 600 15px/1 var(--font-space-grotesk), system-ui, sans-serif; cursor: pointer; flex-shrink: 0; }
+.m-panel { position: fixed; z-index: 60; left: 12px; right: 12px; top: 84px; display: flex; flex-direction: column; padding: 8px; border-radius: 24px; background: #fff; box-shadow: 0 24px 60px rgba(16,16,20,.18); border: 1px solid rgba(16,16,20,.08); transform-origin: top center; animation: mIn .22s ease-out; }
+.m-panel a { display: flex; align-items: center; justify-content: space-between; padding: 16px 16px; border-radius: 16px; font-size: 18px; font-weight: 500; color: #101014; text-decoration: none; letter-spacing: -.01em; }
+.m-panel a:active, .m-panel a:hover { background: #eceaff; color: #2a1fb3; }
+.m-panel a.cta { margin-top: 6px; background: #101014; color: #fff; justify-content: center; }
+.m-veil { position: fixed; inset: 0; z-index: 55; background: rgba(16,16,20,.28); }
+
+/* Breakpoint único: 767px (regras de mobile.js do protótipo) */
+@media (max-width: 767px) {
+  header nav > a { display: none !important; }
+  header > div { padding: 8px 8px 8px 16px !important; flex-wrap: nowrap !important; }
+  .m-menu-btn { display: inline-flex !important; }
+  [data-m="row"] { display: flex !important; grid-template-columns: none !important; flex-wrap: nowrap !important; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; padding-bottom: 8px !important; scrollbar-width: none; }
+  [data-m="row"]::-webkit-scrollbar { display: none; }
+  [data-m="row"] > * { flex: 0 0 72% !important; scroll-snap-align: start; min-width: 0; }
+  [role="tablist"] { flex-wrap: nowrap !important; overflow-x: auto; scrollbar-width: none; max-width: 100%; }
+  [role="tablist"]::-webkit-scrollbar { display: none; }
+  [role="tablist"] > * { flex: 0 0 auto; }
+  aside[aria-label="Nesta publicação"] { position: static !important; flex: 1 1 100% !important; min-width: 0 !important; }
+  aside[aria-label="Nesta publicação"] nav { flex-direction: row !important; overflow-x: auto; border-left: 0 !important; gap: 6px; scrollbar-width: none; padding-bottom: 4px; }
+  aside[aria-label="Nesta publicação"] nav::-webkit-scrollbar { display: none; }
+  aside[aria-label="Nesta publicação"] nav a { flex: 0 0 auto; white-space: nowrap; border: 1px solid #e1e1e6 !important; border-radius: 999px; padding: 8px 14px !important; margin: 0 !important; background: #fff; }
+  button, [role="tab"] { min-height: 40px; }
+  [style*="sticky"] { position: static !important; top: auto !important; }
+  #inicio { min-height: 0 !important; }
+  #inicio > div:first-child { padding-top: 108px !important; }
+  #inicio > div:first-child > div:nth-child(2) { padding-bottom: 8px !important; gap: 20px !important; }
+  #inicio img[alt="Eric Luz"] { height: min(70vh, 560px) !important; margin-top: -24px !important; }
+}
+
+/* Mascote: antes do script carregar, já some no mobile (exceto hi ou mobile="show") */
+@media (max-width: 760px) {
+  eric-mascote:not([mode="hi"]):not([mobile="show"]), eric-mascote[mobile="hide"] { display: none !important; }
+}
+@media (max-width: 559px) { .nav-label-560 { display: none; } }
+/* Sumário da publicação: sticky só a partir de 1120px (asidePos do protótipo) */
+@media (max-width: 1119px) { .aside-toc { position: static !important; } }
